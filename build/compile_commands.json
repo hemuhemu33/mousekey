@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/HyperKeyEventTest.dir/src/testsrc/HyperKeyEventTest.cpp.o -c /home/taka/mousekey/src/testsrc/HyperKeyEventTest.cpp",
+  "file": "/home/taka/mousekey/src/testsrc/HyperKeyEventTest.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/HyperKeyEventTest.dir/src/MouseEvent.cpp.o -c /home/taka/mousekey/src/MouseEvent.cpp",
+  "file": "/home/taka/mousekey/src/MouseEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/HyperKeyEventTest.dir/src/HyperKeyEvent.cpp.o -c /home/taka/mousekey/src/HyperKeyEvent.cpp",
+  "file": "/home/taka/mousekey/src/HyperKeyEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/MouseEventTester.dir/src/testsrc/main.cpp.o -c /home/taka/mousekey/src/testsrc/main.cpp",
+  "file": "/home/taka/mousekey/src/testsrc/main.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/MouseEventTester.dir/src/MouseEvent.cpp.o -c /home/taka/mousekey/src/MouseEvent.cpp",
+  "file": "/home/taka/mousekey/src/MouseEvent.cpp"
+}
+]

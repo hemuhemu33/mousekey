@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/../keymouse.dir/src/testsrc/TestMain.cpp.o CMakeFiles/../keymouse.dir/src/ControllMouse.cpp.o  -o ../keymouse -rdynamic 
