@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/taka/mousekey/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,30 +111,179 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ../exec/HyperKeyEventTest
+# Target rules for targets named ../exec/mousekey
 
 # Build rule for target.
-../exec/HyperKeyEventTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ../exec/HyperKeyEventTest
-.PHONY : ../exec/HyperKeyEventTest
+../exec/mousekey: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ../exec/mousekey
+.PHONY : ../exec/mousekey
 
 # fast build rule for target.
-../exec/HyperKeyEventTest/fast:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/build
-.PHONY : ../exec/HyperKeyEventTest/fast
+../exec/mousekey/fast:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/build
+.PHONY : ../exec/mousekey/fast
 
-#=============================================================================
-# Target rules for targets named ../exec/MouseEventTester
+src/BrowserBackEvent.o: src/BrowserBackEvent.cpp.o
 
-# Build rule for target.
-../exec/MouseEventTester: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ../exec/MouseEventTester
-.PHONY : ../exec/MouseEventTester
+.PHONY : src/BrowserBackEvent.o
 
-# fast build rule for target.
-../exec/MouseEventTester/fast:
-	$(MAKE) -f CMakeFiles/../exec/MouseEventTester.dir/build.make CMakeFiles/../exec/MouseEventTester.dir/build
-.PHONY : ../exec/MouseEventTester/fast
+# target to build an object file
+src/BrowserBackEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/BrowserBackEvent.cpp.o
+.PHONY : src/BrowserBackEvent.cpp.o
+
+src/BrowserBackEvent.i: src/BrowserBackEvent.cpp.i
+
+.PHONY : src/BrowserBackEvent.i
+
+# target to preprocess a source file
+src/BrowserBackEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/BrowserBackEvent.cpp.i
+.PHONY : src/BrowserBackEvent.cpp.i
+
+src/BrowserBackEvent.s: src/BrowserBackEvent.cpp.s
+
+.PHONY : src/BrowserBackEvent.s
+
+# target to generate assembly for a file
+src/BrowserBackEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/BrowserBackEvent.cpp.s
+.PHONY : src/BrowserBackEvent.cpp.s
+
+src/BrowserNextEvent.o: src/BrowserNextEvent.cpp.o
+
+.PHONY : src/BrowserNextEvent.o
+
+# target to build an object file
+src/BrowserNextEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/BrowserNextEvent.cpp.o
+.PHONY : src/BrowserNextEvent.cpp.o
+
+src/BrowserNextEvent.i: src/BrowserNextEvent.cpp.i
+
+.PHONY : src/BrowserNextEvent.i
+
+# target to preprocess a source file
+src/BrowserNextEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/BrowserNextEvent.cpp.i
+.PHONY : src/BrowserNextEvent.cpp.i
+
+src/BrowserNextEvent.s: src/BrowserNextEvent.cpp.s
+
+.PHONY : src/BrowserNextEvent.s
+
+# target to generate assembly for a file
+src/BrowserNextEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/BrowserNextEvent.cpp.s
+.PHONY : src/BrowserNextEvent.cpp.s
+
+src/GoDownEvent.o: src/GoDownEvent.cpp.o
+
+.PHONY : src/GoDownEvent.o
+
+# target to build an object file
+src/GoDownEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoDownEvent.cpp.o
+.PHONY : src/GoDownEvent.cpp.o
+
+src/GoDownEvent.i: src/GoDownEvent.cpp.i
+
+.PHONY : src/GoDownEvent.i
+
+# target to preprocess a source file
+src/GoDownEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoDownEvent.cpp.i
+.PHONY : src/GoDownEvent.cpp.i
+
+src/GoDownEvent.s: src/GoDownEvent.cpp.s
+
+.PHONY : src/GoDownEvent.s
+
+# target to generate assembly for a file
+src/GoDownEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoDownEvent.cpp.s
+.PHONY : src/GoDownEvent.cpp.s
+
+src/GoLeftEvent.o: src/GoLeftEvent.cpp.o
+
+.PHONY : src/GoLeftEvent.o
+
+# target to build an object file
+src/GoLeftEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoLeftEvent.cpp.o
+.PHONY : src/GoLeftEvent.cpp.o
+
+src/GoLeftEvent.i: src/GoLeftEvent.cpp.i
+
+.PHONY : src/GoLeftEvent.i
+
+# target to preprocess a source file
+src/GoLeftEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoLeftEvent.cpp.i
+.PHONY : src/GoLeftEvent.cpp.i
+
+src/GoLeftEvent.s: src/GoLeftEvent.cpp.s
+
+.PHONY : src/GoLeftEvent.s
+
+# target to generate assembly for a file
+src/GoLeftEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoLeftEvent.cpp.s
+.PHONY : src/GoLeftEvent.cpp.s
+
+src/GoRightEvent.o: src/GoRightEvent.cpp.o
+
+.PHONY : src/GoRightEvent.o
+
+# target to build an object file
+src/GoRightEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoRightEvent.cpp.o
+.PHONY : src/GoRightEvent.cpp.o
+
+src/GoRightEvent.i: src/GoRightEvent.cpp.i
+
+.PHONY : src/GoRightEvent.i
+
+# target to preprocess a source file
+src/GoRightEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoRightEvent.cpp.i
+.PHONY : src/GoRightEvent.cpp.i
+
+src/GoRightEvent.s: src/GoRightEvent.cpp.s
+
+.PHONY : src/GoRightEvent.s
+
+# target to generate assembly for a file
+src/GoRightEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoRightEvent.cpp.s
+.PHONY : src/GoRightEvent.cpp.s
+
+src/GoUpEvent.o: src/GoUpEvent.cpp.o
+
+.PHONY : src/GoUpEvent.o
+
+# target to build an object file
+src/GoUpEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoUpEvent.cpp.o
+.PHONY : src/GoUpEvent.cpp.o
+
+src/GoUpEvent.i: src/GoUpEvent.cpp.i
+
+.PHONY : src/GoUpEvent.i
+
+# target to preprocess a source file
+src/GoUpEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoUpEvent.cpp.i
+.PHONY : src/GoUpEvent.cpp.i
+
+src/GoUpEvent.s: src/GoUpEvent.cpp.s
+
+.PHONY : src/GoUpEvent.s
+
+# target to generate assembly for a file
+src/GoUpEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoUpEvent.cpp.s
+.PHONY : src/GoUpEvent.cpp.s
 
 src/HyperKeyEvent.o: src/HyperKeyEvent.cpp.o
 
@@ -142,7 +291,7 @@ src/HyperKeyEvent.o: src/HyperKeyEvent.cpp.o
 
 # target to build an object file
 src/HyperKeyEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/src/HyperKeyEvent.cpp.o
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/HyperKeyEvent.cpp.o
 .PHONY : src/HyperKeyEvent.cpp.o
 
 src/HyperKeyEvent.i: src/HyperKeyEvent.cpp.i
@@ -151,7 +300,7 @@ src/HyperKeyEvent.i: src/HyperKeyEvent.cpp.i
 
 # target to preprocess a source file
 src/HyperKeyEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/src/HyperKeyEvent.cpp.i
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/HyperKeyEvent.cpp.i
 .PHONY : src/HyperKeyEvent.cpp.i
 
 src/HyperKeyEvent.s: src/HyperKeyEvent.cpp.s
@@ -160,8 +309,116 @@ src/HyperKeyEvent.s: src/HyperKeyEvent.cpp.s
 
 # target to generate assembly for a file
 src/HyperKeyEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/src/HyperKeyEvent.cpp.s
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/HyperKeyEvent.cpp.s
 .PHONY : src/HyperKeyEvent.cpp.s
+
+src/Keyboard.o: src/Keyboard.cpp.o
+
+.PHONY : src/Keyboard.o
+
+# target to build an object file
+src/Keyboard.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/Keyboard.cpp.o
+.PHONY : src/Keyboard.cpp.o
+
+src/Keyboard.i: src/Keyboard.cpp.i
+
+.PHONY : src/Keyboard.i
+
+# target to preprocess a source file
+src/Keyboard.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/Keyboard.cpp.i
+.PHONY : src/Keyboard.cpp.i
+
+src/Keyboard.s: src/Keyboard.cpp.s
+
+.PHONY : src/Keyboard.s
+
+# target to generate assembly for a file
+src/Keyboard.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/Keyboard.cpp.s
+.PHONY : src/Keyboard.cpp.s
+
+src/KeyboardMap.o: src/KeyboardMap.cpp.o
+
+.PHONY : src/KeyboardMap.o
+
+# target to build an object file
+src/KeyboardMap.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/KeyboardMap.cpp.o
+.PHONY : src/KeyboardMap.cpp.o
+
+src/KeyboardMap.i: src/KeyboardMap.cpp.i
+
+.PHONY : src/KeyboardMap.i
+
+# target to preprocess a source file
+src/KeyboardMap.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/KeyboardMap.cpp.i
+.PHONY : src/KeyboardMap.cpp.i
+
+src/KeyboardMap.s: src/KeyboardMap.cpp.s
+
+.PHONY : src/KeyboardMap.s
+
+# target to generate assembly for a file
+src/KeyboardMap.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/KeyboardMap.cpp.s
+.PHONY : src/KeyboardMap.cpp.s
+
+src/LeftKeyEvent.o: src/LeftKeyEvent.cpp.o
+
+.PHONY : src/LeftKeyEvent.o
+
+# target to build an object file
+src/LeftKeyEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/LeftKeyEvent.cpp.o
+.PHONY : src/LeftKeyEvent.cpp.o
+
+src/LeftKeyEvent.i: src/LeftKeyEvent.cpp.i
+
+.PHONY : src/LeftKeyEvent.i
+
+# target to preprocess a source file
+src/LeftKeyEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/LeftKeyEvent.cpp.i
+.PHONY : src/LeftKeyEvent.cpp.i
+
+src/LeftKeyEvent.s: src/LeftKeyEvent.cpp.s
+
+.PHONY : src/LeftKeyEvent.s
+
+# target to generate assembly for a file
+src/LeftKeyEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/LeftKeyEvent.cpp.s
+.PHONY : src/LeftKeyEvent.cpp.s
+
+src/MiddleKeyEvent.o: src/MiddleKeyEvent.cpp.o
+
+.PHONY : src/MiddleKeyEvent.o
+
+# target to build an object file
+src/MiddleKeyEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/MiddleKeyEvent.cpp.o
+.PHONY : src/MiddleKeyEvent.cpp.o
+
+src/MiddleKeyEvent.i: src/MiddleKeyEvent.cpp.i
+
+.PHONY : src/MiddleKeyEvent.i
+
+# target to preprocess a source file
+src/MiddleKeyEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/MiddleKeyEvent.cpp.i
+.PHONY : src/MiddleKeyEvent.cpp.i
+
+src/MiddleKeyEvent.s: src/MiddleKeyEvent.cpp.s
+
+.PHONY : src/MiddleKeyEvent.s
+
+# target to generate assembly for a file
+src/MiddleKeyEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/MiddleKeyEvent.cpp.s
+.PHONY : src/MiddleKeyEvent.cpp.s
 
 src/MouseEvent.o: src/MouseEvent.cpp.o
 
@@ -169,8 +426,7 @@ src/MouseEvent.o: src/MouseEvent.cpp.o
 
 # target to build an object file
 src/MouseEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/src/MouseEvent.cpp.o
-	$(MAKE) -f CMakeFiles/../exec/MouseEventTester.dir/build.make CMakeFiles/../exec/MouseEventTester.dir/src/MouseEvent.cpp.o
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/MouseEvent.cpp.o
 .PHONY : src/MouseEvent.cpp.o
 
 src/MouseEvent.i: src/MouseEvent.cpp.i
@@ -179,8 +435,7 @@ src/MouseEvent.i: src/MouseEvent.cpp.i
 
 # target to preprocess a source file
 src/MouseEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/src/MouseEvent.cpp.i
-	$(MAKE) -f CMakeFiles/../exec/MouseEventTester.dir/build.make CMakeFiles/../exec/MouseEventTester.dir/src/MouseEvent.cpp.i
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/MouseEvent.cpp.i
 .PHONY : src/MouseEvent.cpp.i
 
 src/MouseEvent.s: src/MouseEvent.cpp.s
@@ -189,36 +444,278 @@ src/MouseEvent.s: src/MouseEvent.cpp.s
 
 # target to generate assembly for a file
 src/MouseEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/src/MouseEvent.cpp.s
-	$(MAKE) -f CMakeFiles/../exec/MouseEventTester.dir/build.make CMakeFiles/../exec/MouseEventTester.dir/src/MouseEvent.cpp.s
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/MouseEvent.cpp.s
 .PHONY : src/MouseEvent.cpp.s
 
-src/testsrc/HyperKeyEventTest.o: src/testsrc/HyperKeyEventTest.cpp.o
+src/MouseEventList.o: src/MouseEventList.cpp.o
 
-.PHONY : src/testsrc/HyperKeyEventTest.o
+.PHONY : src/MouseEventList.o
 
 # target to build an object file
-src/testsrc/HyperKeyEventTest.cpp.o:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/src/testsrc/HyperKeyEventTest.cpp.o
-.PHONY : src/testsrc/HyperKeyEventTest.cpp.o
+src/MouseEventList.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/MouseEventList.cpp.o
+.PHONY : src/MouseEventList.cpp.o
 
-src/testsrc/HyperKeyEventTest.i: src/testsrc/HyperKeyEventTest.cpp.i
+src/MouseEventList.i: src/MouseEventList.cpp.i
 
-.PHONY : src/testsrc/HyperKeyEventTest.i
+.PHONY : src/MouseEventList.i
 
 # target to preprocess a source file
-src/testsrc/HyperKeyEventTest.cpp.i:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/src/testsrc/HyperKeyEventTest.cpp.i
-.PHONY : src/testsrc/HyperKeyEventTest.cpp.i
+src/MouseEventList.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/MouseEventList.cpp.i
+.PHONY : src/MouseEventList.cpp.i
 
-src/testsrc/HyperKeyEventTest.s: src/testsrc/HyperKeyEventTest.cpp.s
+src/MouseEventList.s: src/MouseEventList.cpp.s
 
-.PHONY : src/testsrc/HyperKeyEventTest.s
+.PHONY : src/MouseEventList.s
 
 # target to generate assembly for a file
-src/testsrc/HyperKeyEventTest.cpp.s:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/src/testsrc/HyperKeyEventTest.cpp.s
-.PHONY : src/testsrc/HyperKeyEventTest.cpp.s
+src/MouseEventList.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/MouseEventList.cpp.s
+.PHONY : src/MouseEventList.cpp.s
+
+src/QuitEvent.o: src/QuitEvent.cpp.o
+
+.PHONY : src/QuitEvent.o
+
+# target to build an object file
+src/QuitEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/QuitEvent.cpp.o
+.PHONY : src/QuitEvent.cpp.o
+
+src/QuitEvent.i: src/QuitEvent.cpp.i
+
+.PHONY : src/QuitEvent.i
+
+# target to preprocess a source file
+src/QuitEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/QuitEvent.cpp.i
+.PHONY : src/QuitEvent.cpp.i
+
+src/QuitEvent.s: src/QuitEvent.cpp.s
+
+.PHONY : src/QuitEvent.s
+
+# target to generate assembly for a file
+src/QuitEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/QuitEvent.cpp.s
+.PHONY : src/QuitEvent.cpp.s
+
+src/ReadConfig.o: src/ReadConfig.cpp.o
+
+.PHONY : src/ReadConfig.o
+
+# target to build an object file
+src/ReadConfig.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/ReadConfig.cpp.o
+.PHONY : src/ReadConfig.cpp.o
+
+src/ReadConfig.i: src/ReadConfig.cpp.i
+
+.PHONY : src/ReadConfig.i
+
+# target to preprocess a source file
+src/ReadConfig.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/ReadConfig.cpp.i
+.PHONY : src/ReadConfig.cpp.i
+
+src/ReadConfig.s: src/ReadConfig.cpp.s
+
+.PHONY : src/ReadConfig.s
+
+# target to generate assembly for a file
+src/ReadConfig.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/ReadConfig.cpp.s
+.PHONY : src/ReadConfig.cpp.s
+
+src/RightKeyEvent.o: src/RightKeyEvent.cpp.o
+
+.PHONY : src/RightKeyEvent.o
+
+# target to build an object file
+src/RightKeyEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/RightKeyEvent.cpp.o
+.PHONY : src/RightKeyEvent.cpp.o
+
+src/RightKeyEvent.i: src/RightKeyEvent.cpp.i
+
+.PHONY : src/RightKeyEvent.i
+
+# target to preprocess a source file
+src/RightKeyEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/RightKeyEvent.cpp.i
+.PHONY : src/RightKeyEvent.cpp.i
+
+src/RightKeyEvent.s: src/RightKeyEvent.cpp.s
+
+.PHONY : src/RightKeyEvent.s
+
+# target to generate assembly for a file
+src/RightKeyEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/RightKeyEvent.cpp.s
+.PHONY : src/RightKeyEvent.cpp.s
+
+src/SearchDevEvent.o: src/SearchDevEvent.cpp.o
+
+.PHONY : src/SearchDevEvent.o
+
+# target to build an object file
+src/SearchDevEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/SearchDevEvent.cpp.o
+.PHONY : src/SearchDevEvent.cpp.o
+
+src/SearchDevEvent.i: src/SearchDevEvent.cpp.i
+
+.PHONY : src/SearchDevEvent.i
+
+# target to preprocess a source file
+src/SearchDevEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/SearchDevEvent.cpp.i
+.PHONY : src/SearchDevEvent.cpp.i
+
+src/SearchDevEvent.s: src/SearchDevEvent.cpp.s
+
+.PHONY : src/SearchDevEvent.s
+
+# target to generate assembly for a file
+src/SearchDevEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/SearchDevEvent.cpp.s
+.PHONY : src/SearchDevEvent.cpp.s
+
+src/SpeedDownEvent.o: src/SpeedDownEvent.cpp.o
+
+.PHONY : src/SpeedDownEvent.o
+
+# target to build an object file
+src/SpeedDownEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/SpeedDownEvent.cpp.o
+.PHONY : src/SpeedDownEvent.cpp.o
+
+src/SpeedDownEvent.i: src/SpeedDownEvent.cpp.i
+
+.PHONY : src/SpeedDownEvent.i
+
+# target to preprocess a source file
+src/SpeedDownEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/SpeedDownEvent.cpp.i
+.PHONY : src/SpeedDownEvent.cpp.i
+
+src/SpeedDownEvent.s: src/SpeedDownEvent.cpp.s
+
+.PHONY : src/SpeedDownEvent.s
+
+# target to generate assembly for a file
+src/SpeedDownEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/SpeedDownEvent.cpp.s
+.PHONY : src/SpeedDownEvent.cpp.s
+
+src/SpeedUpEvent.o: src/SpeedUpEvent.cpp.o
+
+.PHONY : src/SpeedUpEvent.o
+
+# target to build an object file
+src/SpeedUpEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/SpeedUpEvent.cpp.o
+.PHONY : src/SpeedUpEvent.cpp.o
+
+src/SpeedUpEvent.i: src/SpeedUpEvent.cpp.i
+
+.PHONY : src/SpeedUpEvent.i
+
+# target to preprocess a source file
+src/SpeedUpEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/SpeedUpEvent.cpp.i
+.PHONY : src/SpeedUpEvent.cpp.i
+
+src/SpeedUpEvent.s: src/SpeedUpEvent.cpp.s
+
+.PHONY : src/SpeedUpEvent.s
+
+# target to generate assembly for a file
+src/SpeedUpEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/SpeedUpEvent.cpp.s
+.PHONY : src/SpeedUpEvent.cpp.s
+
+src/Uinput.o: src/Uinput.cpp.o
+
+.PHONY : src/Uinput.o
+
+# target to build an object file
+src/Uinput.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/Uinput.cpp.o
+.PHONY : src/Uinput.cpp.o
+
+src/Uinput.i: src/Uinput.cpp.i
+
+.PHONY : src/Uinput.i
+
+# target to preprocess a source file
+src/Uinput.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/Uinput.cpp.i
+.PHONY : src/Uinput.cpp.i
+
+src/Uinput.s: src/Uinput.cpp.s
+
+.PHONY : src/Uinput.s
+
+# target to generate assembly for a file
+src/Uinput.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/Uinput.cpp.s
+.PHONY : src/Uinput.cpp.s
+
+src/WheelDownEvent.o: src/WheelDownEvent.cpp.o
+
+.PHONY : src/WheelDownEvent.o
+
+# target to build an object file
+src/WheelDownEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/WheelDownEvent.cpp.o
+.PHONY : src/WheelDownEvent.cpp.o
+
+src/WheelDownEvent.i: src/WheelDownEvent.cpp.i
+
+.PHONY : src/WheelDownEvent.i
+
+# target to preprocess a source file
+src/WheelDownEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/WheelDownEvent.cpp.i
+.PHONY : src/WheelDownEvent.cpp.i
+
+src/WheelDownEvent.s: src/WheelDownEvent.cpp.s
+
+.PHONY : src/WheelDownEvent.s
+
+# target to generate assembly for a file
+src/WheelDownEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/WheelDownEvent.cpp.s
+.PHONY : src/WheelDownEvent.cpp.s
+
+src/WheelUpEvent.o: src/WheelUpEvent.cpp.o
+
+.PHONY : src/WheelUpEvent.o
+
+# target to build an object file
+src/WheelUpEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/WheelUpEvent.cpp.o
+.PHONY : src/WheelUpEvent.cpp.o
+
+src/WheelUpEvent.i: src/WheelUpEvent.cpp.i
+
+.PHONY : src/WheelUpEvent.i
+
+# target to preprocess a source file
+src/WheelUpEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/WheelUpEvent.cpp.i
+.PHONY : src/WheelUpEvent.cpp.i
+
+src/WheelUpEvent.s: src/WheelUpEvent.cpp.s
+
+.PHONY : src/WheelUpEvent.s
+
+# target to generate assembly for a file
+src/WheelUpEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/WheelUpEvent.cpp.s
+.PHONY : src/WheelUpEvent.cpp.s
 
 src/testsrc/main.o: src/testsrc/main.cpp.o
 
@@ -226,7 +723,7 @@ src/testsrc/main.o: src/testsrc/main.cpp.o
 
 # target to build an object file
 src/testsrc/main.cpp.o:
-	$(MAKE) -f CMakeFiles/../exec/MouseEventTester.dir/build.make CMakeFiles/../exec/MouseEventTester.dir/src/testsrc/main.cpp.o
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/testsrc/main.cpp.o
 .PHONY : src/testsrc/main.cpp.o
 
 src/testsrc/main.i: src/testsrc/main.cpp.i
@@ -235,7 +732,7 @@ src/testsrc/main.i: src/testsrc/main.cpp.i
 
 # target to preprocess a source file
 src/testsrc/main.cpp.i:
-	$(MAKE) -f CMakeFiles/../exec/MouseEventTester.dir/build.make CMakeFiles/../exec/MouseEventTester.dir/src/testsrc/main.cpp.i
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/testsrc/main.cpp.i
 .PHONY : src/testsrc/main.cpp.i
 
 src/testsrc/main.s: src/testsrc/main.cpp.s
@@ -244,7 +741,7 @@ src/testsrc/main.s: src/testsrc/main.cpp.s
 
 # target to generate assembly for a file
 src/testsrc/main.cpp.s:
-	$(MAKE) -f CMakeFiles/../exec/MouseEventTester.dir/build.make CMakeFiles/../exec/MouseEventTester.dir/src/testsrc/main.cpp.s
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/testsrc/main.cpp.s
 .PHONY : src/testsrc/main.cpp.s
 
 # Help Target
@@ -253,19 +750,75 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... ../exec/HyperKeyEventTest"
-	@echo "... ../exec/MouseEventTester"
+	@echo "... rebuild_cache"
+	@echo "... ../exec/mousekey"
+	@echo "... src/BrowserBackEvent.o"
+	@echo "... src/BrowserBackEvent.i"
+	@echo "... src/BrowserBackEvent.s"
+	@echo "... src/BrowserNextEvent.o"
+	@echo "... src/BrowserNextEvent.i"
+	@echo "... src/BrowserNextEvent.s"
+	@echo "... src/GoDownEvent.o"
+	@echo "... src/GoDownEvent.i"
+	@echo "... src/GoDownEvent.s"
+	@echo "... src/GoLeftEvent.o"
+	@echo "... src/GoLeftEvent.i"
+	@echo "... src/GoLeftEvent.s"
+	@echo "... src/GoRightEvent.o"
+	@echo "... src/GoRightEvent.i"
+	@echo "... src/GoRightEvent.s"
+	@echo "... src/GoUpEvent.o"
+	@echo "... src/GoUpEvent.i"
+	@echo "... src/GoUpEvent.s"
 	@echo "... src/HyperKeyEvent.o"
 	@echo "... src/HyperKeyEvent.i"
 	@echo "... src/HyperKeyEvent.s"
+	@echo "... src/Keyboard.o"
+	@echo "... src/Keyboard.i"
+	@echo "... src/Keyboard.s"
+	@echo "... src/KeyboardMap.o"
+	@echo "... src/KeyboardMap.i"
+	@echo "... src/KeyboardMap.s"
+	@echo "... src/LeftKeyEvent.o"
+	@echo "... src/LeftKeyEvent.i"
+	@echo "... src/LeftKeyEvent.s"
+	@echo "... src/MiddleKeyEvent.o"
+	@echo "... src/MiddleKeyEvent.i"
+	@echo "... src/MiddleKeyEvent.s"
 	@echo "... src/MouseEvent.o"
 	@echo "... src/MouseEvent.i"
 	@echo "... src/MouseEvent.s"
-	@echo "... src/testsrc/HyperKeyEventTest.o"
-	@echo "... src/testsrc/HyperKeyEventTest.i"
-	@echo "... src/testsrc/HyperKeyEventTest.s"
+	@echo "... src/MouseEventList.o"
+	@echo "... src/MouseEventList.i"
+	@echo "... src/MouseEventList.s"
+	@echo "... src/QuitEvent.o"
+	@echo "... src/QuitEvent.i"
+	@echo "... src/QuitEvent.s"
+	@echo "... src/ReadConfig.o"
+	@echo "... src/ReadConfig.i"
+	@echo "... src/ReadConfig.s"
+	@echo "... src/RightKeyEvent.o"
+	@echo "... src/RightKeyEvent.i"
+	@echo "... src/RightKeyEvent.s"
+	@echo "... src/SearchDevEvent.o"
+	@echo "... src/SearchDevEvent.i"
+	@echo "... src/SearchDevEvent.s"
+	@echo "... src/SpeedDownEvent.o"
+	@echo "... src/SpeedDownEvent.i"
+	@echo "... src/SpeedDownEvent.s"
+	@echo "... src/SpeedUpEvent.o"
+	@echo "... src/SpeedUpEvent.i"
+	@echo "... src/SpeedUpEvent.s"
+	@echo "... src/Uinput.o"
+	@echo "... src/Uinput.i"
+	@echo "... src/Uinput.s"
+	@echo "... src/WheelDownEvent.o"
+	@echo "... src/WheelDownEvent.i"
+	@echo "... src/WheelDownEvent.s"
+	@echo "... src/WheelUpEvent.o"
+	@echo "... src/WheelUpEvent.i"
+	@echo "... src/WheelUpEvent.s"
 	@echo "... src/testsrc/main.o"
 	@echo "... src/testsrc/main.i"
 	@echo "... src/testsrc/main.s"

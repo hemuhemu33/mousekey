@@ -41,6 +41,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/../exec/HyperKeyEventTest.dir/DependInfo.cmake"
-  "CMakeFiles/../exec/MouseEventTester.dir/DependInfo.cmake"
+  "CMakeFiles/../exec/mousekey.dir/DependInfo.cmake"
   )

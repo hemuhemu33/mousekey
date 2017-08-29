@@ -16,12 +16,18 @@ private:
   static int speed;
   int key;
   static string KEYWORD;
+  static int incrementSpeed;
+  static int declementSpeed;
 public:
   MouseEvent();
   MouseEvent(int key);
   virtual ~MouseEvent(){}
   static void setSpeed(int speed);
   static int getSpeed();
+  static int getIncrementSpeed();
+  static int getDecrementSpeed();
+  static void setIncrementSpeed(int speed);
+  static void setDecrementSpeed(int speed);
   int getKey();
   void setKeyword(string KEYWORD);
   void setKey(int key);

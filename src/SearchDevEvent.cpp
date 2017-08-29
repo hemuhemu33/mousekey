@@ -30,7 +30,7 @@ vector<EventEnum> *SearchDevEvent::getFileEventToVector(){
       }else{
 	EventEnum ee;
 	ee.devicename = nameline;
-	ee.deviceevent = eventNum;
+	ee.deviceevent = "/dev/input/"+eventNum;
 	eventList->push_back(ee);
       }
     }

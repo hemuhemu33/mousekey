@@ -2,6 +2,13 @@
 
 string GoUpEvent::KEYWORD = "GOUPEVENT";
 
+GoUpEvent::~GoUpEvent(){
+  
+}
+string GoUpEvent::getKeyword(){
+  return KEYWORD;
+}
+
 GoUpEvent::GoUpEvent(int key):MouseEvent(key){
   setKeyword(KEYWORD);
 }

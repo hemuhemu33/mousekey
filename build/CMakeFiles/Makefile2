@@ -60,76 +60,39 @@ CMAKE_SOURCE_DIR = /home/taka/mousekey
 CMAKE_BINARY_DIR = /home/taka/mousekey/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/../exec/HyperKeyEventTest.dir
+# Target rules for target CMakeFiles/../exec/mousekey.dir
 
 # All Build rule for target.
-CMakeFiles/../exec/HyperKeyEventTest.dir/all:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/depend
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/taka/mousekey/build/CMakeFiles --progress-num=1,2,3,4 "Built target ../exec/HyperKeyEventTest"
-.PHONY : CMakeFiles/../exec/HyperKeyEventTest.dir/all
+CMakeFiles/../exec/mousekey.dir/all:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/depend
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/taka/mousekey/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target ../exec/mousekey"
+.PHONY : CMakeFiles/../exec/mousekey.dir/all
 
 # Include target in all.
-all: CMakeFiles/../exec/HyperKeyEventTest.dir/all
+all: CMakeFiles/../exec/mousekey.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/../exec/HyperKeyEventTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/taka/mousekey/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/../exec/HyperKeyEventTest.dir/all
+CMakeFiles/../exec/mousekey.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/taka/mousekey/build/CMakeFiles 24
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/../exec/mousekey.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/taka/mousekey/build/CMakeFiles 0
-.PHONY : CMakeFiles/../exec/HyperKeyEventTest.dir/rule
+.PHONY : CMakeFiles/../exec/mousekey.dir/rule
 
 # Convenience name for target.
-../exec/HyperKeyEventTest: CMakeFiles/../exec/HyperKeyEventTest.dir/rule
+../exec/mousekey: CMakeFiles/../exec/mousekey.dir/rule
 
-.PHONY : ../exec/HyperKeyEventTest
-
-# clean rule for target.
-CMakeFiles/../exec/HyperKeyEventTest.dir/clean:
-	$(MAKE) -f CMakeFiles/../exec/HyperKeyEventTest.dir/build.make CMakeFiles/../exec/HyperKeyEventTest.dir/clean
-.PHONY : CMakeFiles/../exec/HyperKeyEventTest.dir/clean
+.PHONY : ../exec/mousekey
 
 # clean rule for target.
-clean: CMakeFiles/../exec/HyperKeyEventTest.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/../exec/MouseEventTester.dir
-
-# All Build rule for target.
-CMakeFiles/../exec/MouseEventTester.dir/all:
-	$(MAKE) -f CMakeFiles/../exec/MouseEventTester.dir/build.make CMakeFiles/../exec/MouseEventTester.dir/depend
-	$(MAKE) -f CMakeFiles/../exec/MouseEventTester.dir/build.make CMakeFiles/../exec/MouseEventTester.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/taka/mousekey/build/CMakeFiles --progress-num=5,6,7 "Built target ../exec/MouseEventTester"
-.PHONY : CMakeFiles/../exec/MouseEventTester.dir/all
-
-# Include target in all.
-all: CMakeFiles/../exec/MouseEventTester.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/../exec/MouseEventTester.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/taka/mousekey/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/../exec/MouseEventTester.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/taka/mousekey/build/CMakeFiles 0
-.PHONY : CMakeFiles/../exec/MouseEventTester.dir/rule
-
-# Convenience name for target.
-../exec/MouseEventTester: CMakeFiles/../exec/MouseEventTester.dir/rule
-
-.PHONY : ../exec/MouseEventTester
+CMakeFiles/../exec/mousekey.dir/clean:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/clean
+.PHONY : CMakeFiles/../exec/mousekey.dir/clean
 
 # clean rule for target.
-CMakeFiles/../exec/MouseEventTester.dir/clean:
-	$(MAKE) -f CMakeFiles/../exec/MouseEventTester.dir/build.make CMakeFiles/../exec/MouseEventTester.dir/clean
-.PHONY : CMakeFiles/../exec/MouseEventTester.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/../exec/MouseEventTester.dir/clean
+clean: CMakeFiles/../exec/mousekey.dir/clean
 
 .PHONY : clean
 

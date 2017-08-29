@@ -1,3 +1,5 @@
+#ifndef SEARCH_DEV_EVENT_HPP_307DBC7D_2568_4DD1_9AD4_19203E418E13_
+#define SEARCH_DEV_EVENT_HPP_307DBC7D_2568_4DD1_9AD4_19203E418E13_
 #include <vector>
 #include <iostream>
 #include <string>
@@ -8,8 +10,7 @@
 
 
 using namespace std;
-#ifndef SEARCH_DEV_EVENT_HPP_307DBC7D_2568_4DD1_9AD4_19203E418E13_
-#define SEARCH_DEV_EVENT_HPP_307DBC7D_2568_4DD1_9AD4_19203E418E13_
+
 
 
 
@@ -21,7 +22,8 @@ private:
   static vector<EventEnum> *eventList;
   static ifstream readfile;
   static vector<string> split(const string &str,char sep);
-
+  static vector<int> fds;
+  
 public:
   /*
     デバイスファイルを読み込んでキーボードのイベントのみをベクターに追加して返す。

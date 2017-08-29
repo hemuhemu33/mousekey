@@ -2,6 +2,24 @@
 #include <cstdlib>
 string MouseEvent::KEYWORD = "";
 int MouseEvent::speed = 1;
+int MouseEvent::incrementSpeed = 10;
+int MouseEvent::declementSpeed = 10;
+
+
+int MouseEvent::getIncrementSpeed(){
+  return incrementSpeed;
+}
+int MouseEvent::getDecrementSpeed(){
+  return declementSpeed;
+}
+
+void  MouseEvent::setDecrementSpeed(int speed){
+  declementSpeed = speed;
+}
+void MouseEvent::setIncrementSpeed(int speed){
+  incrementSpeed = speed;
+}
+
 MouseEvent::MouseEvent(){
   // speed = (int*)malloc(sizeof(int));
   // *(speed) = 1;

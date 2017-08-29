@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/../MouseEventTester.dir/src/testsrc/main.cpp.o CMakeFiles/../MouseEventTester.dir/src/MouseEvent.cpp.o  -o ../MouseEventTester -rdynamic 

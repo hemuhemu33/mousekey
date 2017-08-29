@@ -13,9 +13,9 @@ int Uinput::create(string devicepath){
   
 
   registIoctl();
-  std::cout << "size is " << result.size() << "\n";
+  //  std::cout << "size is " << result.size() << "\n";
   for (auto itr = result.begin(); itr != result.end(); itr++) {
-    std::cout << "itr" << *itr << "\n";
+    // std::cout << "itr" << *itr << "\n";
     if ((*itr) < 0) {
 
       return -2;
@@ -27,6 +27,8 @@ int Uinput::create(string devicepath){
 }
 
 void Uinput::registIoctl(){
+  //イベント事を増やす場合はここに追加する。
+  
   result.push_back(ioctl(virtualfd.fd,UI_SET_EVBIT,EV_REL));
   result.push_back(ioctl(virtualfd.fd,UI_SET_RELBIT,REL_X));
   result.push_back(ioctl(virtualfd.fd, UI_SET_RELBIT, REL_Y));
@@ -36,10 +38,15 @@ void Uinput::registIoctl(){
   result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,BTN_RIGHT));
   result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,BTN_LEFT));
   result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,BTN_MIDDLE));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,BTN_SIDE));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,BTN_EXTRA));
 
+  
 
 }  
-  
+
+
+
 FDManage Uinput::getfd(){
   return virtualfd;
 }

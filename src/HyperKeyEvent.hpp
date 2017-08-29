@@ -12,6 +12,7 @@ public:
   void setHyperKey(bool isPressed);
   static MouseEvent *create(int keycode);
   void pressed(int value);
+  static string getKeyword();
 private:
   bool hyperKey;
   static string KEYWORD;

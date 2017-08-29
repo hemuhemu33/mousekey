@@ -9,6 +9,10 @@ HyperKeyEvent::HyperKeyEvent(int key) : MouseEvent(key){
   setKeyword(KEYWORD);
   hyperKey = false;
 }
+string HyperKeyEvent::getKeyword(){
+  return KEYWORD;
+}
+
 HyperKeyEvent::~HyperKeyEvent(){
   
 }

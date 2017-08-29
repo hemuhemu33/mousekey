@@ -1,0 +1,1 @@
+taka@taka-dynabook-R732-E26GB.7861:1504002028

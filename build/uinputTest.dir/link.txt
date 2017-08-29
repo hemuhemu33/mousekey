@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/../uinputTest.dir/src/testsrc/UinputTest.cpp.o CMakeFiles/../uinputTest.dir/src/Uinput.cpp.o  -o ../uinputTest -rdynamic 
