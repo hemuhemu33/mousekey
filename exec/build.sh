@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ../
+cd ../;
 PATHDIR="./build"
 if [ -e $PATHDIR ]; then
     echo "continue"
@@ -9,8 +9,8 @@ else
     mkdir $PATHDIR
 fi
 
-cd ./build/
-cmake ../
+cd ./build/;
+cmake ../;
 echo $"------compile-------"
 make;
 cd ../;
