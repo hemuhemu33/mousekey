@@ -130,7 +130,7 @@ void KeyboardMap::create(){
 }
 
 int KeyboardMap::stringToKey(string str){
-  
+  int ret;
   if (isCreated == false) {
     //createが一度も呼び出されていないなら、呼び出す。
     //    std::cout << "aaa" << "\n";
@@ -143,6 +143,12 @@ int KeyboardMap::stringToKey(string str){
       return (*(itr)).code;
     }else{}
   }
-  std::cerr << "err:in KeyBoardMap.cpp can't find code" << "\n";
-  return -1;
+try {
+  ret = std::stoi(str);
+ } catch (std::invalid_argument) {
+  std::cout << "invalued_argment" << "\n";
+  ret = -1;
+ }
+ return ret;
+
 }

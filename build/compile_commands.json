@@ -113,5 +113,55 @@
   "directory": "/home/taka/mousekey/build",
   "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/BrowserNextEvent.cpp.o -c /home/taka/mousekey/src/BrowserNextEvent.cpp",
   "file": "/home/taka/mousekey/src/BrowserNextEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/ChangeModeEvent.cpp.o -c /home/taka/mousekey/src/ChangeModeEvent.cpp",
+  "file": "/home/taka/mousekey/src/ChangeModeEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/EndCursorEvent.cpp.o -c /home/taka/mousekey/src/EndCursorEvent.cpp",
+  "file": "/home/taka/mousekey/src/EndCursorEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/DeleteCursorEvent.cpp.o -c /home/taka/mousekey/src/DeleteCursorEvent.cpp",
+  "file": "/home/taka/mousekey/src/DeleteCursorEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/LeftCursorEvent.cpp.o -c /home/taka/mousekey/src/LeftCursorEvent.cpp",
+  "file": "/home/taka/mousekey/src/LeftCursorEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/RightCursorEvent.cpp.o -c /home/taka/mousekey/src/RightCursorEvent.cpp",
+  "file": "/home/taka/mousekey/src/RightCursorEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/HomeCursorEvent.cpp.o -c /home/taka/mousekey/src/HomeCursorEvent.cpp",
+  "file": "/home/taka/mousekey/src/HomeCursorEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/DownCursorEvent.cpp.o -c /home/taka/mousekey/src/DownCursorEvent.cpp",
+  "file": "/home/taka/mousekey/src/DownCursorEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/BackSpaceCursorEvent.cpp.o -c /home/taka/mousekey/src/BackSpaceCursorEvent.cpp",
+  "file": "/home/taka/mousekey/src/BackSpaceCursorEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/EnterCursorEvent.cpp.o -c /home/taka/mousekey/src/EnterCursorEvent.cpp",
+  "file": "/home/taka/mousekey/src/EnterCursorEvent.cpp"
+},
+{
+  "directory": "/home/taka/mousekey/build",
+  "command": "/usr/bin/c++    -I/home/taka/mousekey/./src -I/home/taka/mousekey/./src/testsrc    -std=c++11 -g -o CMakeFiles/../exec/mousekey.dir/src/UpCursorEvent.cpp.o -c /home/taka/mousekey/src/UpCursorEvent.cpp",
+  "file": "/home/taka/mousekey/src/UpCursorEvent.cpp"
 }
 ]

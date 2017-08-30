@@ -29,6 +29,7 @@ int Uinput::create(string devicepath){
 void Uinput::registIoctl(){
   //イベント事を増やす場合はここに追加する。
   
+  //マウス
   result.push_back(ioctl(virtualfd.fd,UI_SET_EVBIT,EV_REL));
   result.push_back(ioctl(virtualfd.fd,UI_SET_RELBIT,REL_X));
   result.push_back(ioctl(virtualfd.fd, UI_SET_RELBIT, REL_Y));
@@ -40,6 +41,17 @@ void Uinput::registIoctl(){
   result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,BTN_MIDDLE));
   result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,BTN_SIDE));
   result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,BTN_EXTRA));
+
+  //キーボード
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_BACKSPACE));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_HOME));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_END));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_LEFT));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_RIGHT));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_DOWN));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_UP));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_ENTER));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_DELETE));
 
   
 

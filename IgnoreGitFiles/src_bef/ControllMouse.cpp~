@@ -1,0 +1,186 @@
+#include "ControllMouse.hpp"
+
+
+
+namespace KEYMOUSE{
+int ControllKey::forward;
+int ControllKey::back;
+int ControllKey::up;
+int ControllKey::down;
+int ControllKey::mouseSpeed;
+
+ControllMouse::ControllMouse(string keyboardEvent,string virtualEvent ,string mouseEvent ,int mouseSpeed){
+  keyboardfd.path = keyboardEvent;
+  virtualfd.path = virtualEvent;
+  mousefd.path = mouseEvent;
+  
+  keyboardfd.fd = open(keyboardfd.path.c_str(),O_RDWR);
+  virtualfd.fd = open(virtualfd.path.c_str(),O_WRONLY | O_NONBLOCK); //マウスであるべき
+  mousefd.fd = open(mousefd.path.c_str(),O_RDWR);
+
+  ControllKey::mouseSpeed = mouseSpeed;
+
+}
+
+
+int ControllMouse::isOpen(){
+  int ret = 0;
+  if (keyboardfd.fd > 0) {
+    ret = ret + 1;
+  }
+  if (mousefd.fd > 0 ) {
+    ret = ret + 2;
+  }
+  if (virtualfd.fd > 0) {
+    ret = ret + 4;
+  }
+  return ret;
+
+}
+
+bool ControllMouse::writeKeyEvent(int code,int value,int type, FDManage fdkind ){
+  struct input_event keyEvent;
+  gettimeofday(&keyEvent.time,NULL);
+  keyEvent.type = type;
+  keyEvent.code = code;
+  keyEvent.value = value;
+  if (write(fdkind.fd, &keyEvent, sizeof(keyEvent)) < 0) {
+    return false;
+  }
+  return true;
+    
+}
+
+bool ControllMouse::isPressed(input_event ev){
+  if (ev.value > 0) {
+    return true;
+  }else {
+    return false;
+  }
+}
+
+//デバッグ用終わり次第消す
+void printdebug(bool henkankey,bool yobikey ,char in){
+  if (henkankey == true && yobikey == true) {
+    std::cout << "Henkan" << " + "   << in << "\n";
+  }
+}
+
+void ControllMouse::recogKey(input_event event){
+  switch (event.type) {
+  case EV_KEY: {
+    switch(event.code){
+      cout << event.code << endl;
+    case KEY_HENKAN: {
+
+      pressHenkanKey = isPressed(event);
+      break;
+    }
+    case KEY_F: {
+      pressF = isPressed(event);
+      printdebug(pressHenkanKey,pressF, 'f');
+      break;
+    }
+    case KEY_M: {
+      pressM = isPressed(event);
+      if(writeKeyEvent(BTN_LEFT, 1, EV_KEY, mousefd) == false){
+	std::cout << "failure 0 " << "\n";
+	return;
+      }
+      if (writeKeyEvent(BTN_LEFT, 0, EV_KEY, mousefd) == false) {
+	std::cout << "failure 1 " << "\n";
+	return ;
+      }
+      if (writeKeyEvent(EV_SYN, 0, SYN_REPORT, mousefd) == false) {
+	std::cout << "failure 2 " << "\n";
+	return;
+      }
+
+      printdebug(pressHenkanKey,pressM, 'm');
+      break;
+    }
+    case KEY_B: {
+      pressB = isPressed(event);
+      printdebug(pressHenkanKey,pressB, 'b');
+      break;
+    }
+    case KEY_N: {
+      pressN = isPressed(event);
+      printdebug(pressHenkanKey,pressN, 'n');
+      break;
+    }
+    case KEY_P: {
+      pressP = isPressed(event);
+      printdebug(pressHenkanKey,pressP, 'p');
+      break;
+    }
+    }
+      
+  }
+  default:
+    break;
+  }  
+}
+
+void ControllMouse::init(){
+  ioctl(virtualfd.fd,UI_SET_KEYBIT,BTN_LEFT);
+  create_uinput_device(virtualfd);
+}
+
+void ControllMouse::active(){
+  
+  while (true) {
+    struct input_event event;
+    if(read(keyboardfd.fd,&event,sizeof(event)) != sizeof(event)){
+      exit(EXIT_FAILURE);
+    }
+    recogKey(event);
+    fflush(stdout);
+  }
+
+}
+
+void ControllMouse::closeFd(){
+  close(keyboardfd.fd);
+  close(mousefd.fd);
+  close(virtualfd.fd);
+}
+void ControllMouse::create_uinput_device(FDManage fd){
+  struct uinput_user_dev uidev;
+  memset(&uidev,0,sizeof(uidev));
+  snprintf(uidev.name,UINPUT_MAX_NAME_SIZE,"TESTKEY");
+  uidev.id.bustype = BUS_USB;
+  uidev.id.vendor = 0xAAAA;
+  uidev.id.product = 0xBBBB;
+  uidev.id.version = 1;
+  if(write(fd.fd,&uidev,sizeof(uidev)) < 0){
+    exit(0);
+  }
+  if (ioctl(fd.fd,UI_DEV_CREATE) < 0) {
+    exit(0);
+  }
+}
+
+
+
+FDManage ControllMouse::FDkindtoFDManage(FDkind fk){
+  FDManage ret;
+  makeDummyFDManage(ret);
+  if (fk == VIRTUAL) {
+    ret = virtualfd;
+  }
+  if (fk == MOUSE) {
+    ret = mousefd;
+  }
+  if (fk ==KEYBOARD) {
+    ret = keyboardfd;
+  }
+  return ret;
+}
+
+void ControllMouse::makeDummyFDManage(FDManage &in){
+  in.fd = -1;
+  in.path = "";
+  
+}
+}

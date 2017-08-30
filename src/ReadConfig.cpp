@@ -13,25 +13,28 @@ ReadConfig::ReadConfig(string fileName,string separate){
 bool ReadConfig::addConfigFile(string fileName,string separate){
   ifstream readConf;
   string readline;
+  string left;
   bool leftIsSet = false;
+  bool rightIsSet = false;
   readConf.open(fileName.c_str());
   if (readConf.fail() == true) {
-    std::cout << "no such file" << "\n";
+    std::cout << "No such file" << fileName << "\n";
     return false;
   }
   while (!readConf.eof()) {
     getline(readConf,readline);
     char *ptr = (char *)readline.c_str();
-
+    
     //    std::cout << readline << "\n";
     Node node;
     leftIsSet = false;
+    rightIsSet = false;
     while (true) {
       jumpToNext(" \t", &ptr, true);
       if (*(ptr+1) == '\0') {
 
-	if (leftIsSet == true) {
-	  
+	if (leftIsSet == true && rightIsSet == true) {
+	  //	  std::cout << node.key << "\n";
 	  result.push_back(node);
 	}else {
 
@@ -43,10 +46,15 @@ bool ReadConfig::addConfigFile(string fileName,string separate){
 
 	  jumpToNext(separate, &ptr, false);
 	  ptr = ptr+1;
-	  node.key = ret;
+	  left = ret;
+	  //	  node.key = ret;
+	  // @bug fix 
 	  leftIsSet = true;
 	}else {
+	  node.key = left;
 	  node.data.push_back(ret);
+	  //       	  std::cout << ret << "\n";
+	  rightIsSet = true;
 	}
       }      
     }

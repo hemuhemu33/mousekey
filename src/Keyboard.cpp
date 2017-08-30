@@ -36,6 +36,7 @@ void Keyboard::create(int argc, char **argv){
 void Keyboard::active(){
   struct input_event event;
   while (true) {
+    keyboardList = MouseEventList::getMouseEventVector();
     usleep(10000);
     for (auto itr = fds.begin(); itr != fds.end(); itr++) {
       if(read((*itr),&event,sizeof(event)) != sizeof(event)){

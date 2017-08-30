@@ -123,6 +123,33 @@ depend:
 	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/build
 .PHONY : ../exec/mousekey/fast
 
+src/BackSpaceCursorEvent.o: src/BackSpaceCursorEvent.cpp.o
+
+.PHONY : src/BackSpaceCursorEvent.o
+
+# target to build an object file
+src/BackSpaceCursorEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/BackSpaceCursorEvent.cpp.o
+.PHONY : src/BackSpaceCursorEvent.cpp.o
+
+src/BackSpaceCursorEvent.i: src/BackSpaceCursorEvent.cpp.i
+
+.PHONY : src/BackSpaceCursorEvent.i
+
+# target to preprocess a source file
+src/BackSpaceCursorEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/BackSpaceCursorEvent.cpp.i
+.PHONY : src/BackSpaceCursorEvent.cpp.i
+
+src/BackSpaceCursorEvent.s: src/BackSpaceCursorEvent.cpp.s
+
+.PHONY : src/BackSpaceCursorEvent.s
+
+# target to generate assembly for a file
+src/BackSpaceCursorEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/BackSpaceCursorEvent.cpp.s
+.PHONY : src/BackSpaceCursorEvent.cpp.s
+
 src/BrowserBackEvent.o: src/BrowserBackEvent.cpp.o
 
 .PHONY : src/BrowserBackEvent.o
@@ -176,6 +203,141 @@ src/BrowserNextEvent.s: src/BrowserNextEvent.cpp.s
 src/BrowserNextEvent.cpp.s:
 	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/BrowserNextEvent.cpp.s
 .PHONY : src/BrowserNextEvent.cpp.s
+
+src/ChangeModeEvent.o: src/ChangeModeEvent.cpp.o
+
+.PHONY : src/ChangeModeEvent.o
+
+# target to build an object file
+src/ChangeModeEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/ChangeModeEvent.cpp.o
+.PHONY : src/ChangeModeEvent.cpp.o
+
+src/ChangeModeEvent.i: src/ChangeModeEvent.cpp.i
+
+.PHONY : src/ChangeModeEvent.i
+
+# target to preprocess a source file
+src/ChangeModeEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/ChangeModeEvent.cpp.i
+.PHONY : src/ChangeModeEvent.cpp.i
+
+src/ChangeModeEvent.s: src/ChangeModeEvent.cpp.s
+
+.PHONY : src/ChangeModeEvent.s
+
+# target to generate assembly for a file
+src/ChangeModeEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/ChangeModeEvent.cpp.s
+.PHONY : src/ChangeModeEvent.cpp.s
+
+src/DeleteCursorEvent.o: src/DeleteCursorEvent.cpp.o
+
+.PHONY : src/DeleteCursorEvent.o
+
+# target to build an object file
+src/DeleteCursorEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/DeleteCursorEvent.cpp.o
+.PHONY : src/DeleteCursorEvent.cpp.o
+
+src/DeleteCursorEvent.i: src/DeleteCursorEvent.cpp.i
+
+.PHONY : src/DeleteCursorEvent.i
+
+# target to preprocess a source file
+src/DeleteCursorEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/DeleteCursorEvent.cpp.i
+.PHONY : src/DeleteCursorEvent.cpp.i
+
+src/DeleteCursorEvent.s: src/DeleteCursorEvent.cpp.s
+
+.PHONY : src/DeleteCursorEvent.s
+
+# target to generate assembly for a file
+src/DeleteCursorEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/DeleteCursorEvent.cpp.s
+.PHONY : src/DeleteCursorEvent.cpp.s
+
+src/DownCursorEvent.o: src/DownCursorEvent.cpp.o
+
+.PHONY : src/DownCursorEvent.o
+
+# target to build an object file
+src/DownCursorEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/DownCursorEvent.cpp.o
+.PHONY : src/DownCursorEvent.cpp.o
+
+src/DownCursorEvent.i: src/DownCursorEvent.cpp.i
+
+.PHONY : src/DownCursorEvent.i
+
+# target to preprocess a source file
+src/DownCursorEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/DownCursorEvent.cpp.i
+.PHONY : src/DownCursorEvent.cpp.i
+
+src/DownCursorEvent.s: src/DownCursorEvent.cpp.s
+
+.PHONY : src/DownCursorEvent.s
+
+# target to generate assembly for a file
+src/DownCursorEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/DownCursorEvent.cpp.s
+.PHONY : src/DownCursorEvent.cpp.s
+
+src/EndCursorEvent.o: src/EndCursorEvent.cpp.o
+
+.PHONY : src/EndCursorEvent.o
+
+# target to build an object file
+src/EndCursorEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/EndCursorEvent.cpp.o
+.PHONY : src/EndCursorEvent.cpp.o
+
+src/EndCursorEvent.i: src/EndCursorEvent.cpp.i
+
+.PHONY : src/EndCursorEvent.i
+
+# target to preprocess a source file
+src/EndCursorEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/EndCursorEvent.cpp.i
+.PHONY : src/EndCursorEvent.cpp.i
+
+src/EndCursorEvent.s: src/EndCursorEvent.cpp.s
+
+.PHONY : src/EndCursorEvent.s
+
+# target to generate assembly for a file
+src/EndCursorEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/EndCursorEvent.cpp.s
+.PHONY : src/EndCursorEvent.cpp.s
+
+src/EnterCursorEvent.o: src/EnterCursorEvent.cpp.o
+
+.PHONY : src/EnterCursorEvent.o
+
+# target to build an object file
+src/EnterCursorEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/EnterCursorEvent.cpp.o
+.PHONY : src/EnterCursorEvent.cpp.o
+
+src/EnterCursorEvent.i: src/EnterCursorEvent.cpp.i
+
+.PHONY : src/EnterCursorEvent.i
+
+# target to preprocess a source file
+src/EnterCursorEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/EnterCursorEvent.cpp.i
+.PHONY : src/EnterCursorEvent.cpp.i
+
+src/EnterCursorEvent.s: src/EnterCursorEvent.cpp.s
+
+.PHONY : src/EnterCursorEvent.s
+
+# target to generate assembly for a file
+src/EnterCursorEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/EnterCursorEvent.cpp.s
+.PHONY : src/EnterCursorEvent.cpp.s
 
 src/GoDownEvent.o: src/GoDownEvent.cpp.o
 
@@ -285,6 +447,33 @@ src/GoUpEvent.cpp.s:
 	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/GoUpEvent.cpp.s
 .PHONY : src/GoUpEvent.cpp.s
 
+src/HomeCursorEvent.o: src/HomeCursorEvent.cpp.o
+
+.PHONY : src/HomeCursorEvent.o
+
+# target to build an object file
+src/HomeCursorEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/HomeCursorEvent.cpp.o
+.PHONY : src/HomeCursorEvent.cpp.o
+
+src/HomeCursorEvent.i: src/HomeCursorEvent.cpp.i
+
+.PHONY : src/HomeCursorEvent.i
+
+# target to preprocess a source file
+src/HomeCursorEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/HomeCursorEvent.cpp.i
+.PHONY : src/HomeCursorEvent.cpp.i
+
+src/HomeCursorEvent.s: src/HomeCursorEvent.cpp.s
+
+.PHONY : src/HomeCursorEvent.s
+
+# target to generate assembly for a file
+src/HomeCursorEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/HomeCursorEvent.cpp.s
+.PHONY : src/HomeCursorEvent.cpp.s
+
 src/HyperKeyEvent.o: src/HyperKeyEvent.cpp.o
 
 .PHONY : src/HyperKeyEvent.o
@@ -365,6 +554,33 @@ src/KeyboardMap.s: src/KeyboardMap.cpp.s
 src/KeyboardMap.cpp.s:
 	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/KeyboardMap.cpp.s
 .PHONY : src/KeyboardMap.cpp.s
+
+src/LeftCursorEvent.o: src/LeftCursorEvent.cpp.o
+
+.PHONY : src/LeftCursorEvent.o
+
+# target to build an object file
+src/LeftCursorEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/LeftCursorEvent.cpp.o
+.PHONY : src/LeftCursorEvent.cpp.o
+
+src/LeftCursorEvent.i: src/LeftCursorEvent.cpp.i
+
+.PHONY : src/LeftCursorEvent.i
+
+# target to preprocess a source file
+src/LeftCursorEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/LeftCursorEvent.cpp.i
+.PHONY : src/LeftCursorEvent.cpp.i
+
+src/LeftCursorEvent.s: src/LeftCursorEvent.cpp.s
+
+.PHONY : src/LeftCursorEvent.s
+
+# target to generate assembly for a file
+src/LeftCursorEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/LeftCursorEvent.cpp.s
+.PHONY : src/LeftCursorEvent.cpp.s
 
 src/LeftKeyEvent.o: src/LeftKeyEvent.cpp.o
 
@@ -528,6 +744,33 @@ src/ReadConfig.cpp.s:
 	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/ReadConfig.cpp.s
 .PHONY : src/ReadConfig.cpp.s
 
+src/RightCursorEvent.o: src/RightCursorEvent.cpp.o
+
+.PHONY : src/RightCursorEvent.o
+
+# target to build an object file
+src/RightCursorEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/RightCursorEvent.cpp.o
+.PHONY : src/RightCursorEvent.cpp.o
+
+src/RightCursorEvent.i: src/RightCursorEvent.cpp.i
+
+.PHONY : src/RightCursorEvent.i
+
+# target to preprocess a source file
+src/RightCursorEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/RightCursorEvent.cpp.i
+.PHONY : src/RightCursorEvent.cpp.i
+
+src/RightCursorEvent.s: src/RightCursorEvent.cpp.s
+
+.PHONY : src/RightCursorEvent.s
+
+# target to generate assembly for a file
+src/RightCursorEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/RightCursorEvent.cpp.s
+.PHONY : src/RightCursorEvent.cpp.s
+
 src/RightKeyEvent.o: src/RightKeyEvent.cpp.o
 
 .PHONY : src/RightKeyEvent.o
@@ -663,6 +906,33 @@ src/Uinput.cpp.s:
 	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/Uinput.cpp.s
 .PHONY : src/Uinput.cpp.s
 
+src/UpCursorEvent.o: src/UpCursorEvent.cpp.o
+
+.PHONY : src/UpCursorEvent.o
+
+# target to build an object file
+src/UpCursorEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/UpCursorEvent.cpp.o
+.PHONY : src/UpCursorEvent.cpp.o
+
+src/UpCursorEvent.i: src/UpCursorEvent.cpp.i
+
+.PHONY : src/UpCursorEvent.i
+
+# target to preprocess a source file
+src/UpCursorEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/UpCursorEvent.cpp.i
+.PHONY : src/UpCursorEvent.cpp.i
+
+src/UpCursorEvent.s: src/UpCursorEvent.cpp.s
+
+.PHONY : src/UpCursorEvent.s
+
+# target to generate assembly for a file
+src/UpCursorEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/../exec/mousekey.dir/build.make CMakeFiles/../exec/mousekey.dir/src/UpCursorEvent.cpp.s
+.PHONY : src/UpCursorEvent.cpp.s
+
 src/WheelDownEvent.o: src/WheelDownEvent.cpp.o
 
 .PHONY : src/WheelDownEvent.o
@@ -753,12 +1023,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ../exec/mousekey"
+	@echo "... src/BackSpaceCursorEvent.o"
+	@echo "... src/BackSpaceCursorEvent.i"
+	@echo "... src/BackSpaceCursorEvent.s"
 	@echo "... src/BrowserBackEvent.o"
 	@echo "... src/BrowserBackEvent.i"
 	@echo "... src/BrowserBackEvent.s"
 	@echo "... src/BrowserNextEvent.o"
 	@echo "... src/BrowserNextEvent.i"
 	@echo "... src/BrowserNextEvent.s"
+	@echo "... src/ChangeModeEvent.o"
+	@echo "... src/ChangeModeEvent.i"
+	@echo "... src/ChangeModeEvent.s"
+	@echo "... src/DeleteCursorEvent.o"
+	@echo "... src/DeleteCursorEvent.i"
+	@echo "... src/DeleteCursorEvent.s"
+	@echo "... src/DownCursorEvent.o"
+	@echo "... src/DownCursorEvent.i"
+	@echo "... src/DownCursorEvent.s"
+	@echo "... src/EndCursorEvent.o"
+	@echo "... src/EndCursorEvent.i"
+	@echo "... src/EndCursorEvent.s"
+	@echo "... src/EnterCursorEvent.o"
+	@echo "... src/EnterCursorEvent.i"
+	@echo "... src/EnterCursorEvent.s"
 	@echo "... src/GoDownEvent.o"
 	@echo "... src/GoDownEvent.i"
 	@echo "... src/GoDownEvent.s"
@@ -771,6 +1059,9 @@ help:
 	@echo "... src/GoUpEvent.o"
 	@echo "... src/GoUpEvent.i"
 	@echo "... src/GoUpEvent.s"
+	@echo "... src/HomeCursorEvent.o"
+	@echo "... src/HomeCursorEvent.i"
+	@echo "... src/HomeCursorEvent.s"
 	@echo "... src/HyperKeyEvent.o"
 	@echo "... src/HyperKeyEvent.i"
 	@echo "... src/HyperKeyEvent.s"
@@ -780,6 +1071,9 @@ help:
 	@echo "... src/KeyboardMap.o"
 	@echo "... src/KeyboardMap.i"
 	@echo "... src/KeyboardMap.s"
+	@echo "... src/LeftCursorEvent.o"
+	@echo "... src/LeftCursorEvent.i"
+	@echo "... src/LeftCursorEvent.s"
 	@echo "... src/LeftKeyEvent.o"
 	@echo "... src/LeftKeyEvent.i"
 	@echo "... src/LeftKeyEvent.s"
@@ -798,6 +1092,9 @@ help:
 	@echo "... src/ReadConfig.o"
 	@echo "... src/ReadConfig.i"
 	@echo "... src/ReadConfig.s"
+	@echo "... src/RightCursorEvent.o"
+	@echo "... src/RightCursorEvent.i"
+	@echo "... src/RightCursorEvent.s"
 	@echo "... src/RightKeyEvent.o"
 	@echo "... src/RightKeyEvent.i"
 	@echo "... src/RightKeyEvent.s"
@@ -813,6 +1110,9 @@ help:
 	@echo "... src/Uinput.o"
 	@echo "... src/Uinput.i"
 	@echo "... src/Uinput.s"
+	@echo "... src/UpCursorEvent.o"
+	@echo "... src/UpCursorEvent.i"
+	@echo "... src/UpCursorEvent.s"
 	@echo "... src/WheelDownEvent.o"
 	@echo "... src/WheelDownEvent.i"
 	@echo "... src/WheelDownEvent.s"
