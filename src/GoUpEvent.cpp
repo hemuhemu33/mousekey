@@ -19,6 +19,7 @@ MouseEvent *GoUpEvent::create(int key){
 }
 
 void GoUpEvent::pressed(int value){
+  //  std::cout <<"aaa"  << "\n";
   if ((value == 1 || value == 2)) {
     if (writeKeyEvent(REL_Y,-1*MouseEvent::getSpeed(),EV_REL,Uinput::getfd()) == false) {
       std::cerr << "Can't write key" << "\n";

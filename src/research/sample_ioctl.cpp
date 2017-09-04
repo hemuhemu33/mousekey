@@ -9,8 +9,8 @@
 #include <string.h>
 
 //ここでマウスとキーボードのイベントを設定してください。
-#define MOUSE_EVENT "/dev/input/event5"
-#define KEYBOARD_EVENT "/dev/input/event14"
+#define MOUSE_EVENT "/dev/input/event4"
+#define KEYBOARD_EVENT "/dev/input/event6"
 
 
 #define die(str, args...) do { perror(str); exit(EXIT_FAILURE); } while(0)

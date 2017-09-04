@@ -1,6 +1,7 @@
 #ifndef CHANGE_MODE_EVENT_HPP_5F76A8BB_361D_4BCF_BDF0_C7A272CF4BA4_
 #define CHANGE_MODE_EVENT_HPP_5F76A8BB_361D_4BCF_BDF0_C7A272CF4BA4_
 #include "MouseEvent.hpp"
+#include "KeyboardMode.hpp"
 class ChangeModeEvent : public MouseEvent
 {
 public:

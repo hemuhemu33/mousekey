@@ -12,9 +12,9 @@ using std::string;
 #define MOSUE_EVENT_HPP_C47A4E75_F621_420C_AFD7_C61E2089AFDE_
 
 
-enum MODE{
-  MOUSEMODE=0,KEYBOARDMODE=1
-};
+// enum MODE{
+//   MOUSEMODE=0,KEYBOARDMODE=1
+// };
 
 
 
@@ -26,7 +26,7 @@ private:
   static string KEYWORD;
   static int incrementSpeed;
   static int declementSpeed;
-  static MODE mode;
+  //  static MODE mode;
 
 public:
   MouseEvent();
@@ -45,8 +45,8 @@ public:
   static MouseEvent *create();
   bool writeKeyEvent(int code, int value, int type,FDManage fd);
   virtual void pressed(int value) = 0;
-  static MODE getMode();
-  static void setMode(MODE m);
+  //  static MODE getMode();
+  //  static void setMode(MODE m);
   
 };
 #endif  // MOSUE_EVENT_HPP_C47A4E75_F621_420C_AFD7_C61E2089AFDE_

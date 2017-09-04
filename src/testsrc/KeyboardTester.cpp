@@ -1,50 +1,40 @@
-#include "MouseEventList.hpp"
+#include "./MouseEvent.hpp"
+#include "GoLeftEvent.hpp"
+#include "GoRightEvent.hpp"
+#include "GoDownEvent.hpp"
+#include "./HyperKeyEvent.hpp"
+#include "./GoUpEvent.hpp"
+#include "ReadConfig.hpp"
+#include "./RightKeyEvent.hpp"
+#include "LeftKeyEvent.hpp"
+#include "WheelUpEvent.hpp"
+#include "WheelDownEvent.hpp"
+#include "SpeedUpEvent.hpp"
+#include "QuitEvent.hpp"
+#include "SpeedDownEvent.hpp"
+#include "BrowserNextEvent.hpp"
+#include "BrowserBackEvent.hpp"
+#include "MiddleKeyEvent.hpp"
+#include "ChangeModeEvent.hpp"
+#include "BackSpaceCursorEvent.hpp"
+#include "HomeCursorEvent.hpp"
+#include "EnterCursorEvent.hpp"
+#include "UpCursorEvent.hpp"
+#include "DownCursorEvent.hpp"
+#include "RightCursorEvent.hpp"
+#include "LeftCursorEvent.hpp"
+#include "DeleteCursorEvent.hpp"
+#include "EndCursorEvent.hpp"
+#include "KeyboardMode.hpp"
+//#include "ReadConfig.hpp"
+#include "KeyboardMap.hpp"
+#include "Mode.hpp"
 
-bool MouseEventList::isCreated;
-//vector<MouseEvent *> MouseEventList::keyboardListMode1;
-//vector<MouseEvent *> MouseEventList::keyboardListMode2;
+void checkAllEvents(string keyword,int key,string mode);
 
-//vector<vector<MouseEvent*>> MouseEventList::mode;
-string MouseEventList::filepath = "./test.conf";
-HyperKeyEvent *MouseEventList::hp;
-
-
-
-void MouseEventList::create(int argc, char *argv[]){
-  int opt = 0;
-  KeyboardMap::create();
-  Uinput::create();
-  
-  //引数が増えたらここに追加する。
-  while ((opt = getopt(argc,argv,"hc:"))!=-1) {
-    switch (opt) {
-    case 'c': {
-      if (optarg == NULL) {
-	std::cout << "-cの後の引数が不正です。" << "\n";
-      }else {
-
-	filepath = optarg;
-      }
-      break;
-    }case 'h': {
-       std::cout << "-h: ヘルプ" << "\n";
-       std::cout << "-c ファイル名: コンフィグファイルを指定" << "\n";
-       exit(0);
-       break;
-     }
-default:
-      break;
-    }
-  }
-  parseConfig(filepath);
-  if (MouseEventList::getHyperKeyEvent() ==NULL) {
-    std::cout << "error:hyperKeyがセットされていません" << "\n";
-    exit(1);
-  }
-}
-
-void MouseEventList::parseConfig(string filepath){
-  ReadConfig *rc = new ReadConfig(filepath,"=");
+int main(int argc, char *argv[])
+{
+  ReadConfig *rc = new ReadConfig("./test.conf","=");
   vector<Node> vec = rc->getResult();
   //  std::cout << vec.size() << "\n";
   for (auto itr = vec.begin(); itr != vec.end(); itr++) {
@@ -67,18 +57,22 @@ void MouseEventList::parseConfig(string filepath){
       }      
     }else{}
   }
-  //  mode.push_back(keyboardListMode1);
-  //  mode.push_back(keyboardListMode2);
-  
+
+  KeyboardMode::printmodeList();
+  std::cout << KeyboardMode::_getMode()->getModeKeyword() << "\n";
+  KeyboardMode::_nextMode();
+  std::cout << KeyboardMode::_getMode()->getModeKeyword() << "\n";
+  KeyboardMode::_nextMode();
+  std::cout << KeyboardMode::_getMode()->getModeKeyword() << "\n";
+  return 0;
 }
 
 
-
-void MouseEventList::checkAllEvents(string keyword,int key,string mode){
+void checkAllEvents(string keyword,int key,string mode){
   MouseEvent *me = NULL;
   //  std::cout << HyperKeyEvent::getKeyword() << "\n";
   if (keyword == HyperKeyEvent::getKeyword()) {
-    hp = new HyperKeyEvent(key);
+    //    HyperKeyEvent *hp = new HyperKeyEvent(key);
     //    me = HyperKeyEvent::create(key);
   }else if (keyword == GoUpEvent::getKeyword()) {
     //    std::cout << GoUpEvent::getKeyword() << "\n";
@@ -109,8 +103,6 @@ void MouseEventList::checkAllEvents(string keyword,int key,string mode){
     me = BrowserBackEvent::create(key);
   }else if(keyword == BrowserNextEvent::getKeyword()){
     me = BrowserNextEvent::create(key);
-  }else if (keyword == ChangeModeEvent::getKeyword()) {
-    me = ChangeModeEvent::create(key);
   }else if (keyword == BackSpaceCursorEvent::getKeyword()){
     me = BackSpaceCursorEvent::create(key);
   }else if (keyword == HomeCursorEvent::getKeyword()) {
@@ -136,6 +128,7 @@ void MouseEventList::checkAllEvents(string keyword,int key,string mode){
     }
     MouseEvent::setSpeed(key);
   }else{
+
     std::cout << "can't find event[" << keyword << "]" << "\n";
     return;
   }
@@ -143,22 +136,9 @@ void MouseEventList::checkAllEvents(string keyword,int key,string mode){
     KeyboardMode::_setMouseEvent(mode, me);    
   }
 
-  
-  // if (mode == "MODE1" || mode == "mode1") {
-  //   keyboardListMode1.push_back(me);    
-  // }else if(mode == "MODE2" || mode == "mode2"){
-  //   keyboardListMode2.push_back(me);
-  // }
-
-}
+  // std::cout << KeyboardMode::_getMode()->getModeKeyword() << "\n";
+  // KeyboardMode::_nextMode();
+  // std::cout << KeyboardMode::_getMode()->getModeKeyword() << "\n";
 
 
-HyperKeyEvent *MouseEventList::getHyperKeyEvent(){
-  return hp;
-}
-
-vector<MouseEvent *> *MouseEventList::getMouseEventVector(){
-  //  std::cout << MouseEvent::getMode() << "\n";
-  //  return mode.at(MouseEvent::getMode());
-  return KeyboardMode::_getMouseEventVector();
 }

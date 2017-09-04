@@ -43,17 +43,44 @@ void Uinput::registIoctl(){
   result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,BTN_EXTRA));
 
   //キーボード
-  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_BACKSPACE));
-  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_HOME));
-  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_END));
-  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_LEFT));
-  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_RIGHT));
-  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_DOWN));
-  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_UP));
-  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_ENTER));
-  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_DELETE));
 
-  
+
+  for (int i = 1; i < 120; i++) {
+    result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,i));
+  }
+  for (int i = 121; i < 138; i++) {
+    result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,i));
+  }
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,140));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,142));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,150));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,152));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,158));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,159));
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,161));
+  for (int i = 163; i < 167; i++) {
+    result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,i));
+  }
+  result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,173));
+  for (int i = 176; i < 181; i++) {
+    result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,i));
+  }
+  for (int i = 183; i < 194; i++) {
+    result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,i));
+  }
+  // result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_BACKSPACE));
+  // result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_HOME));
+  // result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_END));
+  // result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_LEFT));
+  // result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_RIGHT));
+  // result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_DOWN));
+  // result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_UP));
+  // result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_ENTER));
+  // result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_DELETE));
+
+  // result.push_back(ioctl(virtualfd.fd, UI_SET_KEYBIT,KEY_ESC));
+
+
 
 }  
 

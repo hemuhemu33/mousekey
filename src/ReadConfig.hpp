@@ -1,3 +1,5 @@
+#ifndef READ_CONFIG_HPP_D4C58CEC_3226_4FAF_ADA3_16BD2F032C95_
+#define READ_CONFIG_HPP_D4C58CEC_3226_4FAF_ADA3_16BD2F032C95_
 #include "Node.hpp"
 #include <iostream>
 #include <cstdio>
@@ -46,3 +48,4 @@ public:
   vector<Node> getResult();
 
 };
+#endif  // READ_CONFIG_HPP_D4C58CEC_3226_4FAF_ADA3_16BD2F032C95_

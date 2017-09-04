@@ -20,7 +20,7 @@ MouseEvent *LeftCursorEvent::create(int key){
 
 void LeftCursorEvent::pressed(int value){
   if ((value == 1 || value == 2)) {
-    if (writeKeyEvent(KEY_LEFT,1,EV_KEY,Uinput::getfd()) == false) {
+    if (writeKeyEvent(KEY_LEFT,value,EV_KEY,Uinput::getfd()) == false) {
       std::cerr << "Can't write key" << "\n";
       exit(1);
     }

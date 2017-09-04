@@ -32,6 +32,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/../exec/mousekey.dir/src/BackSpaceCursorEvent.cpp.o"
   "CMakeFiles/../exec/mousekey.dir/src/EnterCursorEvent.cpp.o"
   "CMakeFiles/../exec/mousekey.dir/src/UpCursorEvent.cpp.o"
+  "CMakeFiles/../exec/mousekey.dir/src/KeyboardMode.cpp.o"
+  "CMakeFiles/../exec/mousekey.dir/src/Mode.cpp.o"
   "../exec/mousekey.pdb"
   "../exec/mousekey"
 )

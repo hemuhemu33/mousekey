@@ -16,7 +16,7 @@ public:
   static void create(int argc ,char **argv);
   static void active();
 private:
-  static vector<MouseEvent *> keyboardList;
+  static vector<MouseEvent *> *keyboardList;
   static vector<EventEnum> *eventList;
   static vector<int> fds;
 

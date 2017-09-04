@@ -20,7 +20,7 @@ MouseEvent *DeleteCursorEvent::create(int key){
 
 void DeleteCursorEvent::pressed(int value){
   if ((value == 1 || value == 2)) {
-    if (writeKeyEvent(KEY_DELETE,1,EV_KEY,Uinput::getfd()) == false) {
+    if (writeKeyEvent(KEY_DELETE,value,EV_KEY,Uinput::getfd()) == false) {
       std::cerr << "Can't write key" << "\n";
       exit(1);
     }

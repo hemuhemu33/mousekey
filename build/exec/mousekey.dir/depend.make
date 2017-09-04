@@ -19,11 +19,42 @@ exec/mousekey.dir/src/BrowserNextEvent.cpp.o: ../src/MouseConfig.hpp
 exec/mousekey.dir/src/BrowserNextEvent.cpp.o: ../src/MouseEvent.hpp
 exec/mousekey.dir/src/BrowserNextEvent.cpp.o: ../src/Uinput.hpp
 
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/./GoUpEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/./HyperKeyEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/./KeyboardMap.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/./MouseEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/./RightKeyEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/./Uinput.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/BackSpaceCursorEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/BrowserBackEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/BrowserNextEvent.hpp
 exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/ChangeModeEvent.cpp
 exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/ChangeModeEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/DeleteCursorEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/DownCursorEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/EndCursorEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/EnterCursorEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/GoDownEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/GoLeftEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/GoRightEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/HomeCursorEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/KeyboardMode.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/LeftCursorEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/LeftKeyEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/MiddleKeyEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/Mode.hpp
 exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/MouseConfig.hpp
 exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/MouseEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/Node.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/QuitEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/ReadConfig.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/RightCursorEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/SpeedDownEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/SpeedUpEvent.hpp
 exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/Uinput.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/UpCursorEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/WheelDownEvent.hpp
+exec/mousekey.dir/src/ChangeModeEvent.cpp.o: ../src/WheelUpEvent.hpp
 
 exec/mousekey.dir/src/DeleteCursorEvent.cpp.o: ../src/DeleteCursorEvent.cpp
 exec/mousekey.dir/src/DeleteCursorEvent.cpp.o: ../src/DeleteCursorEvent.hpp
@@ -107,9 +138,11 @@ exec/mousekey.dir/src/Keyboard.cpp.o: ../src/GoRightEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/HomeCursorEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/Keyboard.cpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/Keyboard.hpp
+exec/mousekey.dir/src/Keyboard.cpp.o: ../src/KeyboardMode.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/LeftCursorEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/LeftKeyEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/MiddleKeyEvent.hpp
+exec/mousekey.dir/src/Keyboard.cpp.o: ../src/Mode.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/MouseEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/MouseEventList.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/Node.hpp
@@ -125,6 +158,43 @@ exec/mousekey.dir/src/Keyboard.cpp.o: ../src/WheelUpEvent.hpp
 
 exec/mousekey.dir/src/KeyboardMap.cpp.o: ../src/KeyboardMap.cpp
 exec/mousekey.dir/src/KeyboardMap.cpp.o: ../src/KeyboardMap.hpp
+
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/./GoUpEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/./HyperKeyEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/./KeyboardMap.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/./MouseEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/./RightKeyEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/./Uinput.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/BackSpaceCursorEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/BrowserBackEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/BrowserNextEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/ChangeModeEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/DeleteCursorEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/DownCursorEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/EndCursorEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/EnterCursorEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/GoDownEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/GoLeftEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/GoRightEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/HomeCursorEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/KeyboardMode.cpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/KeyboardMode.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/LeftCursorEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/LeftKeyEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/MiddleKeyEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/Mode.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/MouseConfig.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/MouseEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/Node.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/QuitEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/ReadConfig.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/RightCursorEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/SpeedDownEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/SpeedUpEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/Uinput.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/UpCursorEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/WheelDownEvent.hpp
+exec/mousekey.dir/src/KeyboardMode.cpp.o: ../src/WheelUpEvent.hpp
 
 exec/mousekey.dir/src/LeftCursorEvent.cpp.o: ../src/LeftCursorEvent.cpp
 exec/mousekey.dir/src/LeftCursorEvent.cpp.o: ../src/LeftCursorEvent.hpp
@@ -143,6 +213,9 @@ exec/mousekey.dir/src/MiddleKeyEvent.cpp.o: ../src/MiddleKeyEvent.hpp
 exec/mousekey.dir/src/MiddleKeyEvent.cpp.o: ../src/MouseConfig.hpp
 exec/mousekey.dir/src/MiddleKeyEvent.cpp.o: ../src/MouseEvent.hpp
 exec/mousekey.dir/src/MiddleKeyEvent.cpp.o: ../src/Uinput.hpp
+
+exec/mousekey.dir/src/Mode.cpp.o: ../src/Mode.cpp
+exec/mousekey.dir/src/Mode.cpp.o: ../src/Mode.hpp
 
 exec/mousekey.dir/src/MouseEvent.cpp.o: ../src/MouseConfig.hpp
 exec/mousekey.dir/src/MouseEvent.cpp.o: ../src/MouseEvent.cpp
@@ -168,9 +241,11 @@ exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/GoDownEvent.hpp
 exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/GoLeftEvent.hpp
 exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/GoRightEvent.hpp
 exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/HomeCursorEvent.hpp
+exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/KeyboardMode.hpp
 exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/LeftCursorEvent.hpp
 exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/LeftKeyEvent.hpp
 exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/MiddleKeyEvent.hpp
+exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/Mode.hpp
 exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/MouseEvent.hpp
 exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/MouseEventList.cpp
 exec/mousekey.dir/src/MouseEventList.cpp.o: ../src/MouseEventList.hpp
@@ -265,9 +340,11 @@ exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/GoLeftEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/GoRightEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/HomeCursorEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/Keyboard.hpp
+exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/KeyboardMode.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/LeftCursorEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/LeftKeyEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/MiddleKeyEvent.hpp
+exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/Mode.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/MouseEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/MouseEventList.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/Node.hpp

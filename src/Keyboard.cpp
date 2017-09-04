@@ -1,10 +1,11 @@
 #include "Keyboard.hpp"
 
 //vector<MouseEvent *> Keyboard::keyboardList;
-vector<MouseEvent *> Keyboard::keyboardList;
+vector<MouseEvent *> *Keyboard::keyboardList;
 vector<EventEnum> *Keyboard::eventList;
 //vector<EventEnum> *Keyboard::eventList;
 vector<int> Keyboard::fds;
+
 void Keyboard::create(int argc, char **argv){
 
   MouseEventList::create(argc, argv);
@@ -43,7 +44,7 @@ void Keyboard::active(){
 	//	exit(EXIT_FAILURE);
       }else {
 
-	for (auto itr2 = keyboardList.begin(); itr2 != keyboardList.end(); itr2++) {
+	for (auto itr2 = keyboardList->begin(); itr2 != keyboardList->end(); itr2++) {
 	  //	  std::cout << "getcode is "<<event.code << "\n";	  
 	  if (event.code == MouseEventList::getHyperKeyEvent()->getKey()) {
 

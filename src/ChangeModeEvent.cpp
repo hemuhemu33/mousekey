@@ -20,13 +20,16 @@ MouseEvent *ChangeModeEvent::create(int key){
 
 void ChangeModeEvent::pressed(int value){
   if (value == 1) {
+    KeyboardMode::_nextMode();
     //    std::cout << "debug" << "\n";
-    if (getMode() == MOUSEMODE) {
-      setMode(KEYBOARDMODE);
-    }else if (getMode() == KEYBOARDMODE) {
-      setMode(MOUSEMODE);
-    }else {
-    }
+    
+    // if (getMode() == MOUSEMODE) {
+    //   setMode(KEYBOARDMODE);
+    // }else if (getMode() == KEYBOARDMODE) {
+    //   setMode(MOUSEMODE);
+    // }else {
+    // }
+    
   }else {
   }
 

@@ -5,7 +5,7 @@ string MouseEvent::KEYWORD = "";
 int MouseEvent::speed = 1;
 int MouseEvent::incrementSpeed = 10;
 int MouseEvent::declementSpeed = 10;
-MODE MouseEvent::mode = MOUSEMODE;
+//MODE MouseEvent::mode = MOUSEMODE;
 
 
 int MouseEvent::getIncrementSpeed(){
@@ -62,13 +62,13 @@ bool MouseEvent::writeKeyEvent(int code,int value,int type, FDManage fdkind ){
   }
   return true;
 }
-MODE MouseEvent::getMode(){
-  return mode;
+// MODE MouseEvent::getMode(){
+//   return mode;
   
-}
-void MouseEvent::setMode(MODE m){
-  mode = m;
-}
+// }
+// void MouseEvent::setMode(MODE m){
+//   mode = m;
+// }
 
   //abstruct はやはりnewできない。
   //*MouseEvent::create(){
