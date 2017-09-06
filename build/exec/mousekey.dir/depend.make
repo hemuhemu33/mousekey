@@ -122,6 +122,7 @@ exec/mousekey.dir/src/Keyboard.cpp.o: ../src/./KeyboardMap.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/./MouseConfig.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/./MouseEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/./RightKeyEvent.hpp
+exec/mousekey.dir/src/Keyboard.cpp.o: ../src/./SeveralMouseEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/./Uinput.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/BackSpaceCursorEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/BrowserBackEvent.hpp
@@ -143,7 +144,6 @@ exec/mousekey.dir/src/Keyboard.cpp.o: ../src/LeftCursorEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/LeftKeyEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/MiddleKeyEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/Mode.hpp
-exec/mousekey.dir/src/Keyboard.cpp.o: ../src/MouseEvent.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/MouseEventList.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/Node.hpp
 exec/mousekey.dir/src/Keyboard.cpp.o: ../src/QuitEvent.hpp
@@ -285,6 +285,12 @@ exec/mousekey.dir/src/SearchDevEvent.cpp.o: ../src/EventEnum.hpp
 exec/mousekey.dir/src/SearchDevEvent.cpp.o: ../src/SearchDevEvent.cpp
 exec/mousekey.dir/src/SearchDevEvent.cpp.o: ../src/SearchDevEvent.hpp
 
+exec/mousekey.dir/src/SeveralMouseEvent.cpp.o: ../src/MouseConfig.hpp
+exec/mousekey.dir/src/SeveralMouseEvent.cpp.o: ../src/MouseEvent.hpp
+exec/mousekey.dir/src/SeveralMouseEvent.cpp.o: ../src/SeveralMouseEvent.cpp
+exec/mousekey.dir/src/SeveralMouseEvent.cpp.o: ../src/SeveralMouseEvent.hpp
+exec/mousekey.dir/src/SeveralMouseEvent.cpp.o: ../src/Uinput.hpp
+
 exec/mousekey.dir/src/SpeedDownEvent.cpp.o: ../src/MouseConfig.hpp
 exec/mousekey.dir/src/SpeedDownEvent.cpp.o: ../src/MouseEvent.hpp
 exec/mousekey.dir/src/SpeedDownEvent.cpp.o: ../src/SpeedDownEvent.cpp
@@ -325,6 +331,7 @@ exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/./KeyboardMap.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/./MouseConfig.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/./MouseEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/./RightKeyEvent.hpp
+exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/./SeveralMouseEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/./Uinput.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/BackSpaceCursorEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/BrowserBackEvent.hpp
@@ -345,7 +352,6 @@ exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/LeftCursorEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/LeftKeyEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/MiddleKeyEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/Mode.hpp
-exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/MouseEvent.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/MouseEventList.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/Node.hpp
 exec/mousekey.dir/src/testsrc/main.cpp.o: ../src/QuitEvent.hpp

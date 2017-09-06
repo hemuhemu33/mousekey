@@ -14,6 +14,7 @@
 #include <cstdio>
 #include <unistd.h>
 #include <cstdlib>
+#include "SeveralMouseEvent.hpp"
 
 static int do_terminate = 0;
 
@@ -79,39 +80,43 @@ void set_signal_handler ()
 
 
 int main (int argc, char** argv) {
-  int outkb, inkb, ret;
+  //  int outkb, inkb, ret;
+  int inkb;
   Uinput::create();
+  vector<int> kbd;
+
   printf("%s\n", argv[1]);
   if (argc != 2)
     die("Usage: footpedal <INPUT_DEVICE_EVENT>");
 
   inkb = open(argv[1], O_RDONLY | O_NONBLOCK);
+  kbd.push_back(inkb);
   if (inkb < 0)
     die("error: open (in)");
 
-  outkb = open("/dev/uinput", O_WRONLY | O_NONBLOCK);
-  if (outkb < 0)
-    die("error: open (out)");
+  // outkb = open("/dev/uinput", O_WRONLY | O_NONBLOCK);
+  // if (outkb < 0)
+  //   die("error: open (out)");
 
-  ioctl_set(outkb, UI_SET_EVBIT, EV_KEY);
-  ioctl_set(outkb, UI_SET_KEYBIT, KEY_ESC);
+  // ioctl_set(outkb, UI_SET_EVBIT, EV_KEY);
+  // ioctl_set(outkb, UI_SET_KEYBIT, KEY_ESC);
 
-  create_uinput_device(outkb);
+  // create_uinput_device(outkb);
 
   struct input_event ev;
   int sz;
 
-  //ioctlする前にsleepを入れる必要がある。
-  sleep(1);
-  //keyboard削除
-  ioctl(inkb, EVIOCGRAB, 1);
+  // //ioctlする前にsleepを入れる必要がある。
+  // sleep(1);
+  // //keyboard削除
+  // ioctl(inkb, EVIOCGRAB, 1);
 
 
-  //これをいれとかないとずっとenterを押した状態になる。
-  send_event(Uinput::getfd().fd, EV_KEY, KEY_LEFTCTRL, 1);
-  send_event(Uinput::getfd().fd, EV_KEY, KEY_LEFTCTRL, 0);
-  send_event(Uinput::getfd().fd, EV_SYN, SYN_REPORT, 0);
-
+  // //これをいれとかないとずっとenterを押した状態になる。
+  // send_event(Uinput::getfd().fd, EV_KEY, KEY_LEFTCTRL, 1);
+  // send_event(Uinput::getfd().fd, EV_KEY, KEY_LEFTCTRL, 0);
+  // send_event(Uinput::getfd().fd, EV_SYN, SYN_REPORT, 0);
+  SeveralMouseEvent *sme = new SeveralMouseEvent(&kbd);
 
   
   while ((sz = read(inkb, &ev, sizeof(struct input_event)))) {
@@ -123,15 +128,16 @@ int main (int argc, char** argv) {
     if (!((ev.value == 1) || (ev.value == 0)))
       continue;
 
-    send_event(Uinput::getfd().fd, EV_KEY, ev.code, ev.value);
-    send_event(Uinput::getfd().fd, EV_SYN, SYN_REPORT, 0);
+    sme->pressed(ev.code,ev.value);
+    // send_event(Uinput::getfd().fd, EV_KEY, ev.code, ev.value);
+    // send_event(Uinput::getfd().fd, EV_SYN, SYN_REPORT, 0);
   }
 
   ioctl(inkb, EVIOCGRAB, 0);
 
-  destroy_uinput_device(outkb);
+  //  destroy_uinput_device(outkb);
 
-  close(outkb);
+  //  close(outkb);
   close(inkb);
 
   exit(EXIT_SUCCESS);

@@ -25,10 +25,12 @@ vector<EventEnum> *SearchDevEvent::getFileEventToVector(){
     if (strncmp(readline.c_str(),"H:",2) == 0) {
       string eventNum;
       eventNum = keyBoardEventString(readline);
-      if (eventNum.size() == 0) {
+      //      std::cout << readline << "\n";
+      if (eventNum.size() == 0 || (nameline.find("MOUSE_VIRTUAL_DEVICE") != std::string::npos)) {
 	
       }else{
 	EventEnum ee;
+	//	std::cout << "eventNum:"<<eventNum << "\n";
 	ee.devicename = nameline;
 	ee.deviceevent = "/dev/input/"+eventNum;
 	eventList->push_back(ee);
@@ -36,6 +38,7 @@ vector<EventEnum> *SearchDevEvent::getFileEventToVector(){
     }
   }
   readfile.close();
+
   return eventList;
 }
 
@@ -60,7 +63,13 @@ string SearchDevEvent::keyBoardEventString(string eventline){
   v = split(v.at(1),' ');
   if (v.size() >=2) {
     if (v.at(0) == "sysrq" && v.at(1) == "kbd") {
-      return v.at(2);
+      for (int i = 2; i < v.size(); i++) {
+	if (v.at(i).find("event") != std::string::npos) {
+
+	  return v.at(i);	  
+	}
+      }
+
     }
   }
 

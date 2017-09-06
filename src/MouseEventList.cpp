@@ -61,7 +61,7 @@ void MouseEventList::parseConfig(string filepath){
       try {
 	string mode = (*itr).data.at(1);
 	checkAllEvents((*(itr)).key, key,mode);
-      } catch (std::out_of_range) {
+      } catch (...) {
 	//	std::cout << (*itr).key << "\n";
 	checkAllEvents((*(itr)).key, key,"");
       }      

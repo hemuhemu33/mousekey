@@ -58,7 +58,7 @@ void create_uinput_device (int fd) {
 void destroy_uinput_device (int fd) {
   if (ioctl(fd, UI_DEV_DESTROY) < 0)
     die("destroy_uinput_device: ioctl");
-}
+
 
 void on_term (int signal)
 {

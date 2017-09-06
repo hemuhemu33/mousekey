@@ -40,7 +40,7 @@ bool KeyboardMode::_setMode(int mode){
       return true;
     }
   }
-  std::cerr << "can't find mode" << "\n";
+  //  std::cerr << "can't find mode" << "\n";
   return false;
 }
 

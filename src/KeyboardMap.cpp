@@ -145,8 +145,8 @@ int KeyboardMap::stringToKey(string str){
   }
 try {
   ret = std::stoi(str);
- } catch (std::invalid_argument) {
-  std::cout << "invalued_argment" << "\n";
+ } catch (...) {
+  std::cout << "invalued_argment : " << str <<"\n";
   ret = -1;
  }
  return ret;

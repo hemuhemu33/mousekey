@@ -22,7 +22,7 @@ public:
   static SeveralMouseEvent *create(vector<int> *key);
   SeveralMouseEvent(vector<int> *keyfd);
   void destroy();
-  void pressed(int key,int value,FDManage fd);
+  void pressed(int key,int value);
 
 private:
   void ioctlmake(int fd);

@@ -123,6 +123,7 @@ exec/mousekey.dir/src/Keyboard.cpp.o
  /home/taka/mousekey/src/./MouseConfig.hpp
  /home/taka/mousekey/src/./MouseEvent.hpp
  /home/taka/mousekey/src/./RightKeyEvent.hpp
+ /home/taka/mousekey/src/./SeveralMouseEvent.hpp
  /home/taka/mousekey/src/./Uinput.hpp
  /home/taka/mousekey/src/BackSpaceCursorEvent.hpp
  /home/taka/mousekey/src/BrowserBackEvent.hpp
@@ -144,7 +145,6 @@ exec/mousekey.dir/src/Keyboard.cpp.o
  /home/taka/mousekey/src/LeftKeyEvent.hpp
  /home/taka/mousekey/src/MiddleKeyEvent.hpp
  /home/taka/mousekey/src/Mode.hpp
- /home/taka/mousekey/src/MouseEvent.hpp
  /home/taka/mousekey/src/MouseEventList.hpp
  /home/taka/mousekey/src/Node.hpp
  /home/taka/mousekey/src/QuitEvent.hpp
@@ -285,6 +285,12 @@ exec/mousekey.dir/src/SearchDevEvent.cpp.o
  /home/taka/mousekey/src/EventEnum.hpp
  /home/taka/mousekey/src/SearchDevEvent.cpp
  /home/taka/mousekey/src/SearchDevEvent.hpp
+exec/mousekey.dir/src/SeveralMouseEvent.cpp.o
+ /home/taka/mousekey/src/MouseConfig.hpp
+ /home/taka/mousekey/src/MouseEvent.hpp
+ /home/taka/mousekey/src/SeveralMouseEvent.cpp
+ /home/taka/mousekey/src/SeveralMouseEvent.hpp
+ /home/taka/mousekey/src/Uinput.hpp
 exec/mousekey.dir/src/SpeedDownEvent.cpp.o
  /home/taka/mousekey/src/MouseConfig.hpp
  /home/taka/mousekey/src/MouseEvent.hpp
@@ -326,6 +332,7 @@ exec/mousekey.dir/src/testsrc/main.cpp.o
  /home/taka/mousekey/src/./MouseConfig.hpp
  /home/taka/mousekey/src/./MouseEvent.hpp
  /home/taka/mousekey/src/./RightKeyEvent.hpp
+ /home/taka/mousekey/src/./SeveralMouseEvent.hpp
  /home/taka/mousekey/src/./Uinput.hpp
  /home/taka/mousekey/src/BackSpaceCursorEvent.hpp
  /home/taka/mousekey/src/BrowserBackEvent.hpp
@@ -346,7 +353,6 @@ exec/mousekey.dir/src/testsrc/main.cpp.o
  /home/taka/mousekey/src/LeftKeyEvent.hpp
  /home/taka/mousekey/src/MiddleKeyEvent.hpp
  /home/taka/mousekey/src/Mode.hpp
- /home/taka/mousekey/src/MouseEvent.hpp
  /home/taka/mousekey/src/MouseEventList.hpp
  /home/taka/mousekey/src/Node.hpp
  /home/taka/mousekey/src/QuitEvent.hpp

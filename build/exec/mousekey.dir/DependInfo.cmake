@@ -32,6 +32,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/taka/mousekey/src/RightCursorEvent.cpp" "/home/taka/mousekey/build/exec/mousekey.dir/src/RightCursorEvent.cpp.o"
   "/home/taka/mousekey/src/RightKeyEvent.cpp" "/home/taka/mousekey/build/exec/mousekey.dir/src/RightKeyEvent.cpp.o"
   "/home/taka/mousekey/src/SearchDevEvent.cpp" "/home/taka/mousekey/build/exec/mousekey.dir/src/SearchDevEvent.cpp.o"
+  "/home/taka/mousekey/src/SeveralMouseEvent.cpp" "/home/taka/mousekey/build/exec/mousekey.dir/src/SeveralMouseEvent.cpp.o"
   "/home/taka/mousekey/src/SpeedDownEvent.cpp" "/home/taka/mousekey/build/exec/mousekey.dir/src/SpeedDownEvent.cpp.o"
   "/home/taka/mousekey/src/SpeedUpEvent.cpp" "/home/taka/mousekey/build/exec/mousekey.dir/src/SpeedUpEvent.cpp.o"
   "/home/taka/mousekey/src/Uinput.cpp" "/home/taka/mousekey/build/exec/mousekey.dir/src/Uinput.cpp.o"
