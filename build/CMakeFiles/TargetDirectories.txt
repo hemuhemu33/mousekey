@@ -1,5 +1,0 @@
-/home/taka/mousekey/build/CMakeFiles/edit_cache.dir
-/home/taka/mousekey/build/CMakeFiles/../exec/mousekey.dir
-/home/taka/mousekey/build/CMakeFiles/rebuild_cache.dir
-/home/taka/mousekey/build/CMakeFiles/../exec/SeveralMouseEventTest.dir
-/home/taka/mousekey/build/CMakeFiles/../exec/SearchDevEventTest.dir
