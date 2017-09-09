@@ -7,7 +7,7 @@ SeveralMouseEvent *Keyboard::sme;
 
 
 void Keyboard::create(int argc, char **argv){
-  sme = SeveralMouseEvent::create(&fds);
+
   MouseEventList::create(argc, argv);
   keyboardList = MouseEventList::getMouseEventVector();
 
@@ -26,7 +26,7 @@ void Keyboard::create(int argc, char **argv){
     }
     fds.push_back(fd);
   }
-
+  sme = SeveralMouseEvent::create(&fds);
 
   // for (auto itr = fds.begin(); itr != fds.end(); itr++) {
   //   std::cout << (*itr) << "\n";
@@ -40,7 +40,9 @@ void Keyboard::active(){
   struct input_event event;
   auto itr = fds.begin();
 
+  //  writeKeyEvent(KEY_A,0,EV_KEY,Uinput::getfd());
 
+  
   while (true) {
   BREAK:
     keyboardList = MouseEventList::getMouseEventVector();
