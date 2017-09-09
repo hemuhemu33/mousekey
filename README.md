@@ -7,15 +7,14 @@
 
 # 特徴
 
--   このソフトウェアはホームポジションでマウスカーソルを動かすものである。
--   マウスを動かすためのキーボードのキーは自分で設定することができる。
+-   このソフトウェアを用いることによってホームポジションに手をおいたままマウスカーソルを動かすことができます。
+-   マウスを動かすためのキーボードのキーは自分で設定することができます。
 
 
 # 対象
 
--   Ubuntu16.04とUbuntu14.04とpi-topOSでは動くことを確認した。
--   おそらくLinux全般で動くと思われる。
--   macOSやwindowsOSは対象ではない。
+-   Ubuntu16.04とUbuntu14.04とpi-topOSでは動くことを確認しました。
+-   macOSやwindowsOSは対象ではありません。
 
 
 # 使用方法
@@ -23,7 +22,7 @@
 
 ## cmake、gitのインストール
 
-git,cmakeをインストールしていない人はまずgit,cmakeのインストールを行う。以下コマンドsudo apt install cmakesudo apt install git
+git,cmakeをインストールしていない人はまずgit,cmakeのインストールを行います。以下コマンドsudo apt install cmakesudo apt install git
 
 
 ## 仮想環境を用いている場合
@@ -38,9 +37,11 @@ git clone <https://bitbucket.org/hemuhemu33/mousekey.git>cd mousekeycd execsh bu
 
 ## プロジェクトの実行
 
--   以下実行コマンド(管理者権限が必要)
+-   以下実行コマンド(管理者権限が必要です。)
 
 sudo ./mousekeyバックグラウンドで動かす場合、sudo ./mousekey &
+
+※Ctrl+zでプログラムを停止させないでください。
 
 
 # デフォルトのキーバインド
@@ -83,5 +84,4 @@ sudo ./mousekeyバックグラウンドで動かす場合、sudo ./mousekey &
 | 変換+p     | up            |
 | 変換+b     | left          |
 | 変換+c     | MODE1にする   |
-
 
