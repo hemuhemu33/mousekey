@@ -69,7 +69,3 @@ sudo ./mousekey &
 | 変換+p | up          |
 | 変換+b | left        |
 | 変換+c | MODE1にする |
-
-
-
-

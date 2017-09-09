@@ -1,28 +1,38 @@
-- [免責事項](#org1b72396)
-- [特徴](#org8a4cfaa)
-- [対象](#orge026c5f)
-- [使用方法](#org4521d0e)
-  - [cmake、gitのインストール](#orgfda0295)
-  - [仮想環境を用いている場合](#orge6d53e5)
-  - [プロジェクトのコンパイル](#org2d097bf)
-  - [プロジェクトの実行](#orgfd02890)
-- [デフォルトのキーバインド](#orge60f246)
-  - [MODE1](#orgca6d163)
-  - [MODE2](#orgc1db0b1)
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org11a15c8">1. 免責事項</a></li>
+<li><a href="#orge3a3040">2. 特徴</a></li>
+<li><a href="#org36df7e1">3. 対象</a></li>
+<li><a href="#org9d41c60">4. 使用方法</a>
+<ul>
+<li><a href="#org5c21fe4">4.1. cmake、gitのインストール</a></li>
+<li><a href="#orgc22aef3">4.2. 仮想環境を用いている場合</a></li>
+<li><a href="#org154e430">4.3. プロジェクトのコンパイル</a></li>
+<li><a href="#org624ced0">4.4. プロジェクトの実行</a></li>
+</ul>
+</li>
+<li><a href="#org5aaa1b4">5. デフォルトのキーバインド</a>
+<ul>
+<li><a href="#org62a0efe">5.1. MODE1</a></li>
+<li><a href="#orgc1ec287">5.2. MODE2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    (require 'ox-qmd)
 
-```emacs-lisp
-(require 'ox-qmd)
-```
 
-
-<a id="org1b72396"></a>
+<a id="org11a15c8"></a>
 
 # 免責事項
 
 公開しているソフトウェア、および同梱のファイルの使用、またはバグにより生じたいかなる損害に関しまして作者は一切責任を負いません。
 
 
-<a id="org8a4cfaa"></a>
+<a id="orge3a3040"></a>
 
 # 特徴
 
@@ -30,7 +40,7 @@
 -   マウスを動かすキーボードのキーは自分で設定することができる。
 
 
-<a id="orge026c5f"></a>
+<a id="org36df7e1"></a>
 
 # 対象
 
@@ -39,80 +49,232 @@
 -   macOSやwindowsOSは対象ではない。
 
 
-<a id="org4521d0e"></a>
+<a id="org9d41c60"></a>
 
 # 使用方法
 
 
-<a id="orgfda0295"></a>
+<a id="org5c21fe4"></a>
 
 ## cmake、gitのインストール
 
-cmakeをインストールしていない人はまずcmakeをインストールします。 以下コマンド sudo apt install cmake sudo apt install git
+cmakeをインストールしていない人はまずcmakeをインストールします。
+以下コマンド
+sudo apt install cmake
+sudo apt install git
 
 
-<a id="orge6d53e5"></a>
+<a id="orgc22aef3"></a>
 
 ## 仮想環境を用いている場合
 
 マウス統合を解除することによって使えるようになります。
 
 
-<a id="org2d097bf"></a>
+<a id="org154e430"></a>
 
 ## プロジェクトのコンパイル
 
-git clone <https://bitbucket.org/hemuhemu33/mousekey.git> cd mousekey cd exec sh build.sh
+git clone <https://bitbucket.org/hemuhemu33/mousekey.git>
+cd mousekey
+cd exec
+sh build.sh
 
 
-<a id="orgfd02890"></a>
+<a id="org624ced0"></a>
 
 ## プロジェクトの実行
 
 -   以下実行コマンド(管理者権限が必要)
 
-sudo ./mousekey バックグラウンドで動かす場合、 sudo ./mousekey &
+sudo ./mousekey
+バックグラウンドで動かす場合、
+sudo ./mousekey &
 
 
-<a id="orge60f246"></a>
+<a id="org5aaa1b4"></a>
 
 # デフォルトのキーバインド
 
 設定はtest.confに記載。自由にカスタマイズできます。KEY\_●の●の部分を変えるだけです。
 
 
-<a id="orgca6d163"></a>
+<a id="org62a0efe"></a>
 
 ## MODE1
 
-| 変換+q   | プログラムの終了             |
-| 変換+f   | マウスを右にすすめる         |
-| 変換+b   | マウスを左にすすめる         |
-| 変換+p   | マウスを上にすすめる         |
-| 変換+n   | マウスを下にすすめる         |
-| 変換+a   | マウスのスピードを下げる     |
-| 変換+e   | マウスのスピードを上げる     |
-| 変換+sapce | 左クリック                   |
-| 変換+l   | 右クリック                   |
-| 変換+i   | ホイールを上に回す           |
-| 変換+k   | ホイールを下に回す           |
-| 変換+w   | ホイールクリック             |
-| 変換+u   | ブラウザの次へボタン         |
-| 変換+j   | ブラウザの戻るボタン         |
-| 変換+c   | MODE2にする。(モードを増やしたら他のモードになる) |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<a id="orgc1db0b1"></a>
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">変換+q</td>
+<td class="org-left">プログラムの終了</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+f</td>
+<td class="org-left">マウスを右にすすめる</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+b</td>
+<td class="org-left">マウスを左にすすめる</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+p</td>
+<td class="org-left">マウスを上にすすめる</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+n</td>
+<td class="org-left">マウスを下にすすめる</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+a</td>
+<td class="org-left">マウスのスピードを下げる</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+e</td>
+<td class="org-left">マウスのスピードを上げる</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+sapce</td>
+<td class="org-left">左クリック</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+l</td>
+<td class="org-left">右クリック</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+i</td>
+<td class="org-left">ホイールを上に回す</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+k</td>
+<td class="org-left">ホイールを下に回す</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+w</td>
+<td class="org-left">ホイールクリック</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+u</td>
+<td class="org-left">ブラウザの次へボタン</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+j</td>
+<td class="org-left">ブラウザの戻るボタン</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+c</td>
+<td class="org-left">MODE2にする。(モードを増やしたら他のモードになる)</td>
+</tr>
+</tbody>
+</table>
+
+
+<a id="orgc1ec287"></a>
 
 ## MODE2
 
-| 変換+h | BackSpace |
-| 変換+d | Delete    |
-| 変換+a | Home      |
-| 変換+e | End       |
-| 変換+m | Enter     |
-| 変換+n | down      |
-| 変換+f | right     |
-| 変換+p | up        |
-| 変換+b | left      |
-| 変換+c | MODE1にする |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">変換+h</td>
+<td class="org-left">BackSpace</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+d</td>
+<td class="org-left">Delete</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+a</td>
+<td class="org-left">Home</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+e</td>
+<td class="org-left">End</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+m</td>
+<td class="org-left">Enter</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+n</td>
+<td class="org-left">down</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+f</td>
+<td class="org-left">right</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+p</td>
+<td class="org-left">up</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+b</td>
+<td class="org-left">left</td>
+</tr>
+
+
+<tr>
+<td class="org-left">変換+c</td>
+<td class="org-left">MODE1にする</td>
+</tr>
+</tbody>
+</table>
+
