@@ -1,7 +1,3 @@
-#+name: .emacs
-#+begin_src emacs-lisp
-  (require 'ox-qmd)
-#+end_src
 
 #+TITLE: mousekeyの使い方
 
