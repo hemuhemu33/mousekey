@@ -11,25 +11,39 @@ SeveralMouseEvent::SeveralMouseEvent(vector<int> *keyfd){
   }
 }
 
-void SeveralMouseEvent::pressed(int key,int value){
-  
-  if (writeKeyEvent(key,value,EV_KEY,Uinput::getfd()) == false) {
-    std::cerr << "Can't write key" << "\n";
-    exit(1);
+void SeveralMouseEvent::pressed(input_event ev){
+  if (ev.type ==  EV_KEY ) {
+    //    std::cout << ev.code << "\n";
+    if (writeKeyEvent(ev.code,ev.value,EV_KEY,Uinput::getfd()) == false) {
+      std::cerr << "Can't write key" << "\n";
+      exit(1);
+    }
+    if (writeKeyEvent(EV_SYN, 0, SYN_REPORT, Uinput::getfd()) == false) {
+      std::cerr << "Can't write key" << "\n";
+      exit(1);
+    }
+    
+
+    
   }
-  if (writeKeyEvent(EV_SYN, 0, SYN_REPORT, Uinput::getfd()) == false) {
-    std::cerr << "Can't write key" << "\n";
-    exit(1);
-  }
+    
+
+
+
 }
 
 void SeveralMouseEvent::ioctlmake(int fd){
   //ioctlする前にsleepを入れる必要がある。
   //  sleep(1);
-  //挙動がおかしかったら、usleepの中の値を大きくしてみる。
-  usleep(200000);
+  //挙動がおかしかったら、usleepの中の値を大きくしてみる。あとでudevを作ることによってenterを認識させないようにした。
+  //  usleep(100000);
+  struct input_event ev;
+
   //   std::cout << "fd" << fd << "\n";
   result.push_back(ioctl(fd,EVIOCGRAB,1));
+  while ((read(fd,&ev, sizeof(struct input_event)) >= 0)) {
+    std::cout << ev.code << " " << ev.value << "\n";
+  }
   //  std::cout << Uinput::getfd().fd << "\n";
   
   
@@ -51,12 +65,12 @@ void SeveralMouseEvent::ioctlmake(int fd){
   // }
   FDManage fds;
   fds.fd = fd;
-  if(writeKeyEvent(KEY_A,1,EV_KEY,fds)&&
-     writeKeyEvent(KEY_A,0,EV_KEY,fds)&&
-     writeKeyEvent(EV_SYN,0,SYN_REPORT,fds) == false){
-    std::cerr << "Can't write key" << "\n";
-    exit(1);
-  }
+  // if(writeKeyEvent(KEY_A,1,EV_KEY,fds)&&
+  //    writeKeyEvent(KEY_A, 0, EV_KEY, fds) &&
+  //    writeKeyEvent(EV_SYN,0,SYN_REPORT,fds) == false){
+  //   std::cerr << "Can't write key" << "\n";
+  //   exit(1);
+  // }
 
 
   

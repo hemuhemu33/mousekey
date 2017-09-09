@@ -5,6 +5,7 @@
 
 #include "Uinput.hpp"
 #include "MouseEvent.hpp"
+#include "KeyboardMap.hpp"
 #include <fcntl.h>
 #include <linux/input.h>
 #include <linux/uinput.h>
@@ -12,6 +13,8 @@
 #include <cstdio>
 #include <unistd.h>
 #include <cstdlib>
+
+
 using std::vector;
 using std::string;
 
@@ -22,7 +25,7 @@ public:
   static SeveralMouseEvent *create(vector<int> *key);
   SeveralMouseEvent(vector<int> *keyfd);
   void destroy();
-  void pressed(int key,int value);
+  void pressed(input_event ev);
 
 private:
   void ioctlmake(int fd);

@@ -7,7 +7,7 @@ SeveralMouseEvent *Keyboard::sme;
 
 
 void Keyboard::create(int argc, char **argv){
-
+  sme = SeveralMouseEvent::create(&fds);
   MouseEventList::create(argc, argv);
   keyboardList = MouseEventList::getMouseEventVector();
 
@@ -27,7 +27,7 @@ void Keyboard::create(int argc, char **argv){
     fds.push_back(fd);
   }
 
-  sme = SeveralMouseEvent::create(&fds);
+
   // for (auto itr = fds.begin(); itr != fds.end(); itr++) {
   //   std::cout << (*itr) << "\n";
   // }
@@ -38,25 +38,31 @@ void Keyboard::create(int argc, char **argv){
 
 void Keyboard::active(){
   struct input_event event;
+  auto itr = fds.begin();
+
+
   while (true) {
   BREAK:
-    //    std::cout << "aaa" << "\n";
     keyboardList = MouseEventList::getMouseEventVector();
+
     usleep(10000);
-    for (auto itr = fds.begin(); itr != fds.end(); itr++) {
+    for (itr = fds.begin(); itr != fds.end(); itr++) {
       if(read((*itr),&event,sizeof(event)) != sizeof(event)){
 	// nonblockを指定しているため、exitをすると一瞬で終わってしまう。
 	//	exit(EXIT_FAILURE);
+	//	goto BREAK;
       }else {
 
 	for (auto itr2 = keyboardList->begin(); itr2 != keyboardList->end(); itr2++) {
 	  //	  std::cout << "getcode is "<<event.code << "\n";	  
 	  if (event.code == MouseEventList::getHyperKeyEvent()->getKey()) {
+	    //	    std::cout << "aaa" << "\n";
 	    MouseEventList::getHyperKeyEvent()->pressed(event.value);
 	    goto BREAK;
 
 	  }else {
 	    if (MouseEventList::getHyperKeyEvent()->getHyperKey() == true && (*itr2)->getKey() == event.code) {
+	      //	      std::cout << "aaa" << "\n";
 	      (*itr2)->pressed(event.value);
 	      goto BREAK;
 	    }else{}
@@ -67,8 +73,14 @@ void Keyboard::active(){
       }
     }
 
-    sme->pressed(event.code, event.value);
-
-
+    //      sme->pressed(event.code, event.value);
+    sme->pressed(event);
+    // while ((read((*itr),&event, sizeof(struct input_event)) >= 0)) {
+    //   if (event.code == EV_SYN) {
+    // 	break;
+    //   }else {
+    // 	std::cout << event.code << "\n";
+    //   }
+    // }
   }
 }

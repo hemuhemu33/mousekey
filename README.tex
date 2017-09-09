@@ -1,0 +1,125 @@
+% Created 2017-09-09 土 23:44
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{taka}
+\date{\today}
+\title{mousekeyの使い方}
+\hypersetup{
+ pdfauthor={taka},
+ pdftitle={mousekeyの使い方},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.1.1 (Org mode 9.0.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\begin{verbatim}
+(require 'ox-qmd)
+\end{verbatim}
+
+
+\section{免責事項}
+\label{sec:org8a2e981}
+公開しているソフトウェア、および同梱のファイルの使用、またはバグにより生じたいかなる損害に関しまして作者は一切責任を負いません。
+
+\section{特徴}
+\label{sec:orgbee550a}
+\begin{itemize}
+\item このmousekeyはホームポジションでマウスカーソルを動かすソフトウェアである。
+\item マウスを動かすキーボードのキーは自分で設定することができる。
+\end{itemize}
+
+\section{対象}
+\label{sec:orgdda0362}
+\begin{itemize}
+\item Ubuntu16.04とUbuntu14.04とpi-topOSでは動くことを確認した。
+\item おそらくLinux全般で動くと思われる。（動作報告をしてほしい。）
+\item macOSやwindowsOSは対象ではない。
+\end{itemize}
+
+\section{使用方法}
+\label{sec:org93dab86}
+\subsection{cmake、gitのインストール}
+\label{sec:orgedb5e14}
+cmakeをインストールしていない人はまずcmakeをインストールします。
+以下コマンド
+sudo apt install cmake
+sudo apt install git
+
+\subsection{仮想環境を用いている場合}
+\label{sec:org16d9054}
+マウス統合を解除することによって使えるようになります。
+\subsection{プロジェクトのコンパイル}
+\label{sec:org8d23935}
+git clone \url{https://bitbucket.org/hemuhemu33/mousekey.git}
+cd mousekey
+cd exec
+sh build.sh
+
+\subsection{プロジェクトの実行}
+\label{sec:orgbdf4309}
+\begin{itemize}
+\item 以下実行コマンド(管理者権限が必要)
+\end{itemize}
+sudo ./mousekey
+バックグラウンドで動かす場合、
+sudo ./mousekey \&
+
+\section{デフォルトのキーバインド}
+\label{sec:org8dc8d9c}
+設定はtest.confに記載。自由にカスタマイズできます。KEY\_●の●の部分を変えるだけです。
+\subsection{MODE1}
+\label{sec:org02adf99}
+\begin{center}
+\begin{tabular}{ll}
+変換+q & プログラムの終了\\
+変換+f & マウスを右にすすめる\\
+変換+b & マウスを左にすすめる\\
+変換+p & マウスを上にすすめる\\
+変換+n & マウスを下にすすめる\\
+変換+a & マウスのスピードを下げる\\
+変換+e & マウスのスピードを上げる\\
+変換+sapce & 左クリック\\
+変換+l & 右クリック\\
+変換+i & ホイールを上に回す\\
+変換+k & ホイールを下に回す\\
+変換+w & ホイールクリック\\
+変換+u & ブラウザの次へボタン\\
+変換+j & ブラウザの戻るボタン\\
+変換+c & MODE2にする。(モードを増やしたら他のモードになる)\\
+\end{tabular}
+\end{center}
+
+\subsection{MODE2}
+\label{sec:orgd8793ae}
+\begin{center}
+\begin{tabular}{ll}
+変換+h & BackSpace\\
+変換+d & Delete\\
+変換+a & Home\\
+変換+e & End\\
+変換+m & Enter\\
+変換+n & down\\
+変換+f & right\\
+変換+p & up\\
+変換+b & left\\
+変換+c & MODE1にする\\
+\end{tabular}
+\end{center}
+\end{document}
