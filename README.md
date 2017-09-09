@@ -50,176 +50,39 @@ sudo ./mousekeyバックグラウンドで動かす場合、sudo ./mousekey &
 
 ## MODE1
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
+| キー       | 内容                                              |
+| :--------- | :----------------------------------------------   |
+| 変換+q     | プログラムの終了                                  |
+| 変換+f     | マウスを右にすすめる                              |
+| 変換+b     | マウスを左にすすめる                              |
+| 変換+p     | マウスを上にすすめる                              |
+| 変換+n     | マウスを下にすすめる                              |
+| 変換+a     | マウスのスピードを下げる                          |
+| 変換+e     | マウスのスピードを上げる                          |
+| 変換+sapce | 左クリック                                        |
+| 変換+l     | 右クリック                                        |
+| 変換+i     | ホイールを上に回す                                |
+| 変換+k     | ホイールを下に回す                                |
+| 変換+w     | ホイールクリック                                  |
+| 変換+u     | ブラウザの次へボタン                              |
+| 変換+j     | ブラウザの戻るボタン                              |
+| 変換+c     | MODE2にする。(モードを増やしたら他のモードになる) |
 
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">変換+q</td>
-<td class="org-left">プログラムの終了</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+f</td>
-<td class="org-left">マウスを右にすすめる</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+b</td>
-<td class="org-left">マウスを左にすすめる</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+p</td>
-<td class="org-left">マウスを上にすすめる</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+n</td>
-<td class="org-left">マウスを下にすすめる</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+a</td>
-<td class="org-left">マウスのスピードを下げる</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+e</td>
-<td class="org-left">マウスのスピードを上げる</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+sapce</td>
-<td class="org-left">左クリック</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+l</td>
-<td class="org-left">右クリック</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+i</td>
-<td class="org-left">ホイールを上に回す</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+k</td>
-<td class="org-left">ホイールを下に回す</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+w</td>
-<td class="org-left">ホイールクリック</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+u</td>
-<td class="org-left">ブラウザの次へボタン</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+j</td>
-<td class="org-left">ブラウザの戻るボタン</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+c</td>
-<td class="org-left">MODE2にする。(モードを増やしたら他のモードになる)</td>
-</tr>
-</tbody>
-</table>
-
+  
 
 ## MODE2
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">変換+h</td>
-<td class="org-left">BackSpace</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+d</td>
-<td class="org-left">Delete</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+a</td>
-<td class="org-left">Home</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+e</td>
-<td class="org-left">End</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+m</td>
-<td class="org-left">Enter</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+n</td>
-<td class="org-left">down</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+f</td>
-<td class="org-left">right</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+p</td>
-<td class="org-left">up</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+b</td>
-<td class="org-left">left</td>
-</tr>
-
-
-<tr>
-<td class="org-left">変換+c</td>
-<td class="org-left">MODE1にする</td>
-</tr>
-</tbody>
-</table>
+| キー       | 内容          |
+| :--------- | :------------ |
+| 変換+h     | BackSpace     |
+| 変換+d     | Delete        |
+| 変換+a     | Home          |
+| 変換+e     | End           |
+| 変換+m     | Enter         |
+| 変換+n     | down          |
+| 変換+f     | right         |
+| 変換+p     | up            |
+| 変換+b     | left          |
+| 変換+c     | MODE1にする   |
 
