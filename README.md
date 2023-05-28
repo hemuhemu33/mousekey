@@ -31,7 +31,7 @@ git,cmakeをインストールしていない人はまずgit,cmakeのインス�
 
 ## プロジェクトのコンパイル
 
-git clone <https://bitbucket.org/hemuhemu33/mousekey.git>
+git clone <https://github.com/hemuhemu33/mousekey.git>
 
 cd mousekey
 
