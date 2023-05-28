@@ -21,7 +21,7 @@
 
 ## cmake、gitのインストール
 
-git,cmakeをインストールしていない人はまずgit,cmakeのインストールを行います。以下コマンドsudo apt install cmakesudo apt install git
+git,cmakeをインストールしていない人はまずgit,cmakeのインストールを行います。以下コマンドsudo apt install cmake git
 
 
 ## 仮想環境を用いている場合
